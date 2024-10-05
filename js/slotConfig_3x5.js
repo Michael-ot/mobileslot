@@ -565,25 +565,25 @@ var slotConfig_3x5 = {
     // just uncomment this piece of code and you will get 20 slot lines
     lines: [				// predefined  slot lines positions 0 - most bottom window on reels
 		    [1,1,1,1,1],	// line 0 
-		    [2,2,2,2,2],	// line 1 
-		    [0,0,0,0,0],	// line 2 
-		    [2,1,0,1,2],	// line 3 
-		    [0,1,2,1,0],	// line 4 
-		    [1,2,1,2,1],	// line 5 
-		    [1,0,1,0,1],	// line 6 
-		    [2,2,1,0,0],	// line 7 
-		    [0,0,1,2,2],	// line 8 
-		    [1,0,1,2,1],	// line 9 
-		    [1,2,1,0,1],	// line 10 
-		    [2,1,1,1,2],	// line 11 
-		    [0,1,1,1,0],	// line 12 
-		    [2,1,2,1,2],	// line 13 
-		    [0,1,0,1,0],	// line 14 
-		    [1,1,2,1,1],	// line 15 
-		    [1,1,0,1,1],	// line 16 
-		    [2,2,0,2,2],	// line 17 
-		    [0,0,2,0,0],	// line 18 
-		    [2,0,0,0,2],	// line 19 
+		    // [2,2,2,2,2],	// line 1 
+		    // [0,0,0,0,0],	// line 2 
+		    // [2,1,0,1,2],	// line 3 
+		    // [0,1,2,1,0],	// line 4 
+		    // [1,2,1,2,1],	// line 5 
+		    // [1,0,1,0,1],	// line 6 
+		    // [2,2,1,0,0],	// line 7 
+		    // [0,0,1,2,2],	// line 8 
+		    // [1,0,1,2,1],	// line 9 
+		    // [1,2,1,0,1],	// line 10 
+		    // [2,1,1,1,2],	// line 11 
+		    // [0,1,1,1,0],	// line 12 
+		    // [2,1,2,1,2],	// line 13 
+		    // [0,1,0,1,0],	// line 14 
+		    // [1,1,2,1,1],	// line 15 
+		    // [1,1,0,1,1],	// line 16 
+		    // [2,2,0,2,2],	// line 17 
+		    // [0,0,2,0,0],	// line 18 
+		    // [2,0,0,0,2],	// line 19 
     ],
 
     payLines:[
@@ -774,20 +774,20 @@ var slotConfig_3x5 = {
     createLineButtons: function(scene) {
         if(!this.lineButtonsLeftOrder || !this.lineButtonsRightOrder) return null;
         var lineButtons = [];
-        for(var i = 0; i < this.lineButtonsLeftOrder.length; i++)
-     {
-         var lB = new LineButton(scene, 'button_line', 'button_line_hover', this.lineButtonsLeftOrder[i]);
-         lineButtons.push(lB); 
-         lB.create(-828,  -469 + 77 * i, 0.5, 0.5, 'gameFont_0', 48);
-        }
+    //     for(var i = 0; i < this.lineButtonsLeftOrder.length; i++)
+    //  {
+    //      var lB = new LineButton(scene, 'button_line', 'button_line_hover', this.lineButtonsLeftOrder[i]);
+    //      lineButtons.push(lB); 
+    //      lB.create(-828,  -469 + 77 * i, 0.5, 0.5, 'gameFont_0', 48);
+    //     }
 
-        for(var i = 0; i < this.lineButtonsRightOrder.length; i++)
-        {
-            var lB = new LineButton(scene, 'button_line', 'button_line_hover', this.lineButtonsRightOrder[i]);
-            lineButtons.push(lB); 
-            lB.create(828, -469 + 77 * i, 0.5, 0.5, 'gameFont_0', 48);
-            lB.button.setScale(-1, 1);
-        }
+    //     for(var i = 0; i < this.lineButtonsRightOrder.length; i++)
+    //     {
+    //         var lB = new LineButton(scene, 'button_line', 'button_line_hover', this.lineButtonsRightOrder[i]);
+    //         lineButtons.push(lB); 
+    //         lB.create(828, -469 + 77 * i, 0.5, 0.5, 'gameFont_0', 48);
+    //         lB.button.setScale(-1, 1);
+    //     }
 
      lineButtons.sort((a, b) => a.number - b.number);
      return lineButtons;
@@ -1221,10 +1221,7 @@ var slotConfig_3x5 = {
         let aboutTitle = popup.scene.add.bitmapText(-580, -140 - 85, 'gameFont_1', 'ABOUT THE GAME', 46, 0).setOrigin(0,0.5); // text
         rulesContainer.add(aboutTitle);
         let aboutText = popup.scene.add.bitmapText(-580, -100 - 85, 'gameFont_0',
-        'Donuts slot is a pack of Slot Games with 5 reels and  20 paylines  oriented from \n' +
-        'left  to  right. The games have 8 regular symbols that win  if  three or  more  are \n'+  
-        'lined  up in sequence on  a  payline, beginning from the leftmost  position. The 4 \n'+
-        'high pay symbols and the 4 low pay symbols. The slot also features a mini-game.', 46, 0).setOrigin(0, 0); // text
+        '', 46, 0).setOrigin(0, 0); // text
         aboutText.setLetterSpacing(-0.7);
         aboutText.tint = 0xfef859;
         rulesContainer.add(aboutText);
@@ -1273,8 +1270,8 @@ var slotConfig_3x5 = {
         // popup.add(popup.title);
 
         // add logo
-        let logo = popup.scene.add.sprite(-10, -143 + yOffset, 'logo').setOrigin(0.5);
-        popup.add(logo);
+        // let logo = popup.scene.add.sprite(-10, -143 + yOffset, 'logo').setOrigin(0.5);
+        // popup.add(logo);
 
         // add message
         popup.messageText = popup.scene.add.bitmapText(-8, 35 + yOffset, 'gameFont_0', 'Need Help?', 46, 1).setOrigin(0.5);
@@ -1287,7 +1284,7 @@ var slotConfig_3x5 = {
         popup.addButton('exitButton','exit_button', 'exit_button_hover', false, 258, -285  + yOffset);
 
         popup['supportButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['supportButton'].clickEvent.add(()=>{window.open("http://www.mkeystudio.com"); }, popup);
+        popup['supportButton'].clickEvent.add(()=>{window.open("https://www.onehubplay.com/"); }, popup);
         
         popup['exitButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
         popup['exitButton'].clickEvent.add(()=>{popup.scene.guiController.closePopUp(popup);});
@@ -1347,10 +1344,10 @@ var slotConfig_3x5 = {
         popup.addButton('termsButton','extralong_button', 'extralong_button_hover', false, -12, 180 + yOffset);
 
         popup['privacyButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['privacyButton'].clickEvent.add(()=>{window.open("http://www.mkeystudio.com"); }, popup);
+        popup['privacyButton'].clickEvent.add(()=>{window.open("https://www.onehubplay.com/privacy"); }, popup);
         
         popup['termsButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['termsButton'].clickEvent.add(()=>{window.open("http://www.mkeystudio.com"); }, popup);
+        popup['termsButton'].clickEvent.add(()=>{window.open("https://www.onehubplay.com/terms-condition"); }, popup);
 
         popup['exitButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
         popup['exitButton'].clickEvent.add(()=>{popup.scene.guiController.closePopUp(popup);});
