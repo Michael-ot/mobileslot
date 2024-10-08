@@ -175,14 +175,14 @@ var slotConfig_3x5 = {
         },
 
         // common gui sprites 
-        // {
-        //     fileName: 'ButtonMenu.png',
-        //     name: 'button_menu'
-        // },
-        // {
-        //     fileName: 'ButtonMenuHover.png',
-        //     name: 'button_menu_hover'
-        // },
+        {
+            fileName: 'ButtonMenu.png',
+            name: 'button_menu'
+        },
+        {
+            fileName: 'ButtonMenuHover.png',
+            name: 'button_menu_hover'
+        },
         {
             fileName: 'ButtonInfo.png',
             name: 'button_info'
@@ -842,18 +842,18 @@ var slotConfig_3x5 = {
         slotControls.slotSpinButton.setDepth(depth); 
 
         // menu button
-        // slotControls.menuButton = new SceneButton(scene, 'button_menu', 'button_menu_hover', true);   
-        // slotControls.buttons.push(slotControls.menuButton);
-        // slotControls.menuButton.create(-905, -550, 0.5, 0.5);
-        // slotControls.menuButton.addClickEvent(()=>{ 
-        //     console.log('menu click');
-        //     slotControls.settingsButton.button.setVisible(!slotControls.settingsButton.button.visible);  
-        //     slotControls.rulesButton.button.setVisible(!slotControls.rulesButton.button.visible); 
-        //     slotControls.slotInfoButton.button.setVisible(!slotControls.slotInfoButton.button.visible); 
-            // slotControls.menuPanel.setVisible(!slotControls.menuPanel.visible); 
-        //     scene.soundController.playClip('button_click');}, this);
-        // slotControls.menuButton.button.setVisible(true); 
-        // slotControls.menuButton.setDepth(depth); 
+        slotControls.menuButton = new SceneButton(scene, 'button_menu', 'button_menu_hover', true);   
+        slotControls.buttons.push(slotControls.menuButton);
+        slotControls.menuButton.create(-905, -550, 0.5, 0.5);
+        slotControls.menuButton.addClickEvent(()=>{ 
+            console.log('menu click');
+            slotControls.settingsButton.button.setVisible(!slotControls.settingsButton.button.visible);  
+            slotControls.rulesButton.button.setVisible(!slotControls.rulesButton.button.visible); 
+            slotControls.slotInfoButton.button.setVisible(!slotControls.slotInfoButton.button.visible); 
+            slotControls.menuPanel.setVisible(!slotControls.menuPanel.visible); 
+            scene.soundController.playClip('button_click');}, this);
+        slotControls.menuButton.button.setVisible(true); 
+        slotControls.menuButton.setDepth(depth); 
 
         // settings button
         slotControls.settingsButton = new SceneButton(scene, 'button_settings', 'button_settings_hover', false);   
