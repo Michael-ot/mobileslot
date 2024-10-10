@@ -1,27 +1,27 @@
 // 3x5 20 lines, line buttons modern
 var slotConfig_3x5 = {
-    symbolSizeY: 250, 
+    symbolSizeY: 250,
     spinTime: 2000,                 // time, milliseconds
     winShowTime: 3000,              // time, milliseconds
-    showWinCoinsMessage : false,    // displaying a message with the amount of money won
+    showWinCoinsMessage: false,    // displaying a message with the amount of money won
     winMessageTime: 2400,           // win message show time
-    minWin : 200,                      // to show big, mega, huge popup
-    useBigWinCongratulation : true,    // to show big, mega, huge popup
-    showWinFreeSpinsMessage : true,    // show free spin message
-    showFreeGameMessage : true,
+    minWin: 200,                      // to show big, mega, huge popup
+    useBigWinCongratulation: true,    // to show big, mega, huge popup
+    showWinFreeSpinsMessage: true,    // show free spin message
+    showFreeGameMessage: true,
 
     symbAnimFrameRate: 22,      // symbols animation frame rate
-    frameWidth : 316,           // frame width
-    frameHeight : 316,          // frame height
+    frameWidth: 316,           // frame width
+    frameHeight: 316,          // frame height
 
     playSpinSound: false,
 
-    lineColor : 0xFFEA31,       // line color
-    showWinLines : true,
+    lineColor: 0xFFEA31,       // line color
+    showWinLines: true,
 
     lineBetMaxValue: 20,        // slot line bet maxvalue
     useWild: true,              // use wild flag, wild can be substitute for any symbol
-                                // to create winning combinations (exclude first reel)
+    // to create winning combinations (exclude first reel)
     wild: 'Wild',               // wild symbol name
     useScatter: true,           // use scatter flag - we will use the scatter functionality
     scatter: 'Scatter',         // scatter symbol name
@@ -36,27 +36,27 @@ var slotConfig_3x5 = {
     localOffsetY: 70,                           // y offset from center for all scene objects
 
     maxHold: 2,                                 // the maximum number of slot reels that can be held
-    
+
     fonts: [
         {
             fontName: 'gameFont_0',
-            filePNG:  'fonts/DosisB_50_0.png',
-            fileXML:  'fonts/DosisB_50_0.xml'
+            filePNG: 'fonts/DosisB_50_0.png',
+            fileXML: 'fonts/DosisB_50_0.xml'
         },
         {
             fontName: 'gameFont_1',
-            filePNG:  'fonts/DosisB_50_1.png',
-            fileXML:  'fonts/DosisB_50_1.xml'
+            filePNG: 'fonts/DosisB_50_1.png',
+            fileXML: 'fonts/DosisB_50_1.xml'
         },
         {
             fontName: 'gameFont_2',
-            filePNG:  'fonts/DosisB_50_2.png',
-            fileXML:  'fonts/DosisB_50_2.xml'
+            filePNG: 'fonts/DosisB_50_2.png',
+            fileXML: 'fonts/DosisB_50_2.xml'
         },
         {
             fontName: 'gameFont_3',
-            filePNG:  'fonts/DosisB_50_3.png',
-            fileXML:  'fonts/DosisB_50_3.xml'
+            filePNG: 'fonts/DosisB_50_3.png',
+            fileXML: 'fonts/DosisB_50_3.xml'
         },
 
     ],
@@ -118,6 +118,10 @@ var slotConfig_3x5 = {
             name: 'panel_balance'
         },
         {
+            fileName: 'gui/PanelBalance.png',
+            name: 'panel-addmoney'
+        },
+        {
             fileName: null,
             name: 'panel_menu'
         },
@@ -129,6 +133,16 @@ var slotConfig_3x5 = {
             fileName: 'ButtonLineHover.png',
             name: 'button_line_hover'
         },
+
+        {
+            fileName: 'PanelBalance.png',
+            name: 'long-button'
+        },
+        {
+            fileName: 'PanelBalance.png',
+            name: 'long-button-hover'
+        },
+
         {
             fileName: 'ButtonMaxBet.png',
             name: 'button_maxbet'
@@ -145,6 +159,7 @@ var slotConfig_3x5 = {
             fileName: 'ButtonSpinHover.png',
             name: 'button_spin_hover'
         },
+
         {
             fileName: 'ButtonAutoSpin.png',
             name: 'button_autospin'
@@ -218,35 +233,35 @@ var slotConfig_3x5 = {
         {
             fileName: 'gui/MessagePanel.png',
             name: 'message_panel'
-        },   
+        },
         {
             fileName: 'gui/SmallMessagePanel.png',
             name: 'small_message_panel'
-        }, 
+        },
         {
             fileName: 'gui/AboutPanel.png',
             name: 'about_panel'
-        },  
+        },
         {
             fileName: 'gui/SettingsPanel.png',
             name: 'settings_panel'
-        }, 
+        },
         {
             fileName: 'gui/FreeSpinPanel.png',
             name: 'freespin_panel'
-        }, 
+        },
         {
             fileName: 'gui/BigWinPanel.png',
             name: 'bigwin_panel'
-        }, 
+        },
         {
             fileName: 'gui/HugeWinPanel.png',
             name: 'hugewin_panel'
-        }, 
+        },
         {
             fileName: 'gui/MegaWinPanel.png',
             name: 'megawin_panel'
-        }, 
+        },
         {
             fileName: null,
             name: 'settings_title'
@@ -286,248 +301,248 @@ var slotConfig_3x5 = {
         {
             fileName: 'gui/Logo.png',
             name: 'logo'
-        }, 
+        },
         {
             fileName: 'gui/ExitButton.png',
             name: 'exit_button'
-        }, 
+        },
         {
             fileName: 'gui/ExitButtonHover.png',
             name: 'exit_button_hover'
-        },   
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'middle_button'
-        }, 
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'middle_button_hover'
-        },   
+        },
         {
-            fileName: 'gui/LongButton.png', 
+            fileName: 'gui/LongButton.png',
             name: 'long_button'
-        }, 
+        },
         {
-            fileName: 'gui/LongButtonHover.png', 
+            fileName: 'gui/LongButtonHover.png',
             name: 'long_button_hover'
-        }, 
+        },
         {
-            fileName: 'gui/ExtraLongButton.png', 
+            fileName: 'gui/ExtraLongButton.png',
             name: 'extralong_button'
-        }, 
+        },
         {
-            fileName: 'gui/ExtraLongButtonHover.png', 
+            fileName: 'gui/ExtraLongButtonHover.png',
             name: 'extralong_button_hover'
         },
         {
-            fileName: 'gui/SmallButton.png', 
+            fileName: 'gui/SmallButton.png',
             name: 'small_button'
-        }, 
+        },
         {
-            fileName: 'gui/SmallButtonHover.png', 
+            fileName: 'gui/SmallButtonHover.png',
             name: 'small_button_hover'
-        }, 
+        },
         {
-            fileName: 'gui/InfoPanel.png', 
+            fileName: 'gui/InfoPanel.png',
             name: 'info_panel'
-        },  
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'help_title'
-        },  
+        },
         {
-            fileName: 'gui/JackpotWinPanel.png', 
+            fileName: 'gui/JackpotWinPanel.png',
             name: 'jackpotwin_panel'
-        },   
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'jackpotwin_title'
-        }, 
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'pu_background'
-        },   
+        },
         {
-            fileName: 'gui/grayBkg_01.png', 
+            fileName: 'gui/grayBkg_01.png',
             name: 'gray_01'
-        }, 
+        },
         {
-            fileName: 'gui/whiteBkg.png', 
+            fileName: 'gui/whiteBkg.png',
             name: 'white_bkg'
         },
         {
-            fileName: 'gui/NextButtonHover.png', 
+            fileName: 'gui/NextButtonHover.png',
             name: 'next_button_hover'
         },
         {
-            fileName: 'gui/NextButton.png', 
+            fileName: 'gui/NextButton.png',
             name: 'next_button'
-        },  
+        },
         {
-            fileName: 'gui/PrevButtonHover.png', 
+            fileName: 'gui/PrevButtonHover.png',
             name: 'prev_button_hover'
-        },   
+        },
         {
-            fileName: 'gui/PrevButton.png', 
+            fileName: 'gui/PrevButton.png',
             name: 'prev_button'
-        },        
+        },
         {
-            fileName: null,  
+            fileName: null,
             name: 'soundon'
-        },  
+        },
         {
-            fileName: null,  
+            fileName: null,
             name: 'soundoff'
-        }, 
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'musicon'
-        }, 
+        },
         {
             fileName: null,
             name: 'musicoff'
-        },     
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'navi_dot'
-        },    
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'navi_dot_active'
-        },   
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'lamp_off'
-        },  
+        },
         {
-            fileName: null, 
+            fileName: null,
             name: 'lamp_on'
-        },  
+        },
         {
-            fileName: 'gui/ChestGamePanel.png', 
+            fileName: 'gui/ChestGamePanel.png',
             name: 'chestgame_panel'
-        },  
+        },
         {
-            fileName: 'gui/ChestOpened.png', 
+            fileName: 'gui/ChestOpened.png',
             name: 'chest_opened'
-        }, 
+        },
         {
-            fileName: 'gui/ChestClosed.png', 
+            fileName: 'gui/ChestClosed.png',
             name: 'chest_closed'
-        }, 
+        },
         {
-            fileName: 'gui/ChestGameCoin.png', 
+            fileName: 'gui/ChestGameCoin.png',
             name: 'chestgame_coin'
-        }, 
+        },
     ],
 
     symbols:
-    [
-        {
-            fileName: 'Diamond.png',                        // filename or null
-            name: 'Diamond',                                // sprite name
-            fileNameBlurred: 'DiamondBlurred.png',          // blurry symbol file name, folder png/SymbolsBlurred
-            animation: 'DiamondSheet.png',                  // animation sheet file name, folder png/SymbolsSheet
-            hideWinSymbol: true,                           // temporary hide the win symbol during the win animation
-            useWildSubstitute: true                         // use wild substitute for the symbol
-        },
-        {
-            fileName: 'Heart.png',           
-            name: 'Heart',                   
-            fileNameBlurred: 'HeartBlurred.png', 
-            animation: 'HeartSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: true
-        },
-        {
-            fileName: 'Asymb.png',          
-            name: 'Asymb',                   
-            fileNameBlurred: 'AsymbBlurred.png', 
-            animation: 'AsymbSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: true
-        },
-        {
-            fileName: 'Ten.png',          
-            name: 'Ten',                   
-            fileNameBlurred: 'TenBlurred.png', 
-            animation: 'TenSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: true
-        },
-        {
-            fileName: 'Nine.png',          
-            name: 'Nine',                   
-            fileNameBlurred: 'NineBlurred.png', 
-            animation: 'NineSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: true
-        },
-        {
-            fileName: 'Jsymb.png',          
-            name: 'Jsymb',                   
-            fileNameBlurred: 'JsymbBlurred.png', 
-            animation: 'JsymbSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: true
-        },
-        {
-            fileName: 'Ksymb.png',          
-            name: 'Ksymb',                   
-            fileNameBlurred: 'KsymbBlurred.png', 
-            animation: 'KsymbSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: true
-        },
-        {
-            fileName: 'Qsymb.png',          
-            name: 'Qsymb',                   
-            fileNameBlurred: 'QsymbBlurred.png', 
-            animation: 'QsymbSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: true
-        },
-        {
-            fileName: 'Wild.png',          
-            name: 'Wild',                   
-            fileNameBlurred: 'WildBlurred.png', 
-            animation: 'WildSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: false
-        },
-        {
-            fileName: 'Scatter.png',          
-            name: 'Scatter',                   
-            fileNameBlurred: 'ScatterBlurred.png', 
-            animation: 'ScatterSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: false
-        },
-        {
-            fileName: 'Bonus.png',          
-            name: 'Bonus',                   
-            fileNameBlurred: 'BonusBlurred.png', 
-            animation: 'BonusSheet.png',
-            hideWinSymbol: true, 
-            useWildSubstitute: false
-        }
-    ],
+        [
+            {
+                fileName: 'Diamond.png',                        // filename or null
+                name: 'Diamond',                                // sprite name
+                fileNameBlurred: 'DiamondBlurred.png',          // blurry symbol file name, folder png/SymbolsBlurred
+                animation: 'DiamondSheet.png',                  // animation sheet file name, folder png/SymbolsSheet
+                hideWinSymbol: true,                           // temporary hide the win symbol during the win animation
+                useWildSubstitute: true                         // use wild substitute for the symbol
+            },
+            {
+                fileName: 'Heart.png',
+                name: 'Heart',
+                fileNameBlurred: 'HeartBlurred.png',
+                animation: 'HeartSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: true
+            },
+            {
+                fileName: 'Asymb.png',
+                name: 'Asymb',
+                fileNameBlurred: 'AsymbBlurred.png',
+                animation: 'AsymbSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: true
+            },
+            {
+                fileName: 'Ten.png',
+                name: 'Ten',
+                fileNameBlurred: 'TenBlurred.png',
+                animation: 'TenSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: true
+            },
+            {
+                fileName: 'Nine.png',
+                name: 'Nine',
+                fileNameBlurred: 'NineBlurred.png',
+                animation: 'NineSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: true
+            },
+            {
+                fileName: 'Jsymb.png',
+                name: 'Jsymb',
+                fileNameBlurred: 'JsymbBlurred.png',
+                animation: 'JsymbSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: true
+            },
+            {
+                fileName: 'Ksymb.png',
+                name: 'Ksymb',
+                fileNameBlurred: 'KsymbBlurred.png',
+                animation: 'KsymbSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: true
+            },
+            {
+                fileName: 'Qsymb.png',
+                name: 'Qsymb',
+                fileNameBlurred: 'QsymbBlurred.png',
+                animation: 'QsymbSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: true
+            },
+            {
+                fileName: 'Wild.png',
+                name: 'Wild',
+                fileNameBlurred: 'WildBlurred.png',
+                animation: 'WildSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: false
+            },
+            {
+                fileName: 'Scatter.png',
+                name: 'Scatter',
+                fileNameBlurred: 'ScatterBlurred.png',
+                animation: 'ScatterSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: false
+            },
+            {
+                fileName: 'Bonus.png',
+                name: 'Bonus',
+                fileNameBlurred: 'BonusBlurred.png',
+                animation: 'BonusSheet.png',
+                hideWinSymbol: true,
+                useWildSubstitute: false
+            }
+        ],
 
-    reels:[
+    reels: [
         {//0
-            symbolImages: ['Heart', 'Nine', 'Jsymb', 'Heart', 'Qsymb', 'Diamond', 'Ten', 'Ksymb', 'Heart', 'Asymb', 'Scatter', 'Diamond'], 
+            symbolImages: ['Heart', 'Nine', 'Jsymb', 'Heart', 'Qsymb', 'Diamond', 'Ten', 'Ksymb', 'Heart', 'Asymb', 'Scatter', 'Diamond'],
             offsetX: -618,
             offsetY: -125,
             windowImage: 'reel',    // not used
-            windowsCount: 3,    
+            windowsCount: 3,
             addSpinTime: 0, // additional spin time for reel milliseconds   
         },
         {//1
-            symbolImages: ['Heart', 'Diamond', 'Heart','Qsymb', 'Nine', 'Jsymb', 'Diamond', 'Ksymb','Asymb', 'Ten', 'Scatter', 'Diamond', 'Heart', 'Nine', 'Ten', 'Diamond', 'Wild'], 
+            symbolImages: ['Heart', 'Diamond', 'Heart', 'Qsymb', 'Nine', 'Jsymb', 'Diamond', 'Ksymb', 'Asymb', 'Ten', 'Scatter', 'Diamond', 'Heart', 'Nine', 'Ten', 'Diamond', 'Wild'],
             offsetX: -309,
             offsetY: -125,
             windowImage: 'reel',        // not used
-            windowsCount: 3,    
+            windowsCount: 3,
             addSpinTime: 100, // additional spin time for reel milliseconds   
         },
         { // 2
@@ -539,7 +554,7 @@ var slotConfig_3x5 = {
             addSpinTime: 200, // additional spin time for reel milliseconds   
         },
         { // 3
-            symbolImages: ['Diamond', 'Bonus', 'Nine', 'Bonus', 'Jsymb', 'Qsymb', 'Heart', 'Wild', 'Diamond', 'Ksymb', 'Asymb', 'Heart', 'Scatter', 'Diamond', 'Heart','Ten', 'Wild'],
+            symbolImages: ['Diamond', 'Bonus', 'Nine', 'Bonus', 'Jsymb', 'Qsymb', 'Heart', 'Wild', 'Diamond', 'Ksymb', 'Asymb', 'Heart', 'Scatter', 'Diamond', 'Heart', 'Ten', 'Wild'],
             offsetX: 309,
             offsetY: -125,
             windowImage: 'reel',        // not used
@@ -547,7 +562,7 @@ var slotConfig_3x5 = {
             addSpinTime: 300, // additional spin time for reel milliseconds     
         },
         { // 4
-            symbolImages: ['Diamond', 'Bonus', 'Heart', 'Diamond', 'Wild','Nine', 'Jsymb', 'Diamond', 'Qsymb', 'Asymb', 'Wild', 'Scatter','Heart', 'Ksymb', 'Ten', 'Wild', 'Bonus'],
+            symbolImages: ['Diamond', 'Bonus', 'Heart', 'Diamond', 'Wild', 'Nine', 'Jsymb', 'Diamond', 'Qsymb', 'Asymb', 'Wild', 'Scatter', 'Heart', 'Ksymb', 'Ten', 'Wild', 'Bonus'],
             offsetX: 618,
             offsetY: -125,
             windowImage: 'reel',        // not used
@@ -564,29 +579,29 @@ var slotConfig_3x5 = {
 
     // just uncomment this piece of code and you will get 20 slot lines
     lines: [				// predefined  slot lines positions 0 - most bottom window on reels
-		    [1,1,1,1,1],	// line 0 
-		    [2,2,2,2,2],	// line 1 
-		    [0,0,0,0,0],	// line 2 
-		    [2,1,0,1,2],	// line 3 
-		    [0,1,2,1,0],	// line 4 
-		    [1,2,1,2,1],	// line 5 
-		    [1,0,1,0,1],	// line 6 
-		    [2,2,1,0,0],	// line 7 
-		    [0,0,1,2,2],	// line 8 
-		    [1,0,1,2,1],	// line 9 
-		    [1,2,1,0,1],	// line 10 
-		    [2,1,1,1,2],	// line 11 
-		    [0,1,1,1,0],	// line 12 
-		    [2,1,2,1,2],	// line 13 
-		    [0,1,0,1,0],	// line 14 
-		    [1,1,2,1,1],	// line 15 
-		    [1,1,0,1,1],	// line 16 
-		    [2,2,0,2,2],	// line 17 
-		    [0,0,2,0,0],	// line 18 
-		    [2,0,0,0,2],	// line 19 
+        [1, 1, 1, 1, 1],	// line 0 
+        [2, 2, 2, 2, 2],	// line 1 
+        [0, 0, 0, 0, 0],	// line 2 
+        [2, 1, 0, 1, 2],	// line 3 
+        [0, 1, 2, 1, 0],	// line 4 
+        [1, 2, 1, 2, 1],	// line 5 
+        [1, 0, 1, 0, 1],	// line 6 
+        [2, 2, 1, 0, 0],	// line 7 
+        [0, 0, 1, 2, 2],	// line 8 
+        [1, 0, 1, 2, 1],	// line 9 
+        [1, 2, 1, 0, 1],	// line 10 
+        [2, 1, 1, 1, 2],	// line 11 
+        [0, 1, 1, 1, 0],	// line 12 
+        [2, 1, 2, 1, 2],	// line 13 
+        [0, 1, 0, 1, 0],	// line 14 
+        [1, 1, 2, 1, 1],	// line 15 
+        [1, 1, 0, 1, 1],	// line 16 
+        [2, 2, 0, 2, 2],	// line 17 
+        [0, 0, 2, 0, 0],	// line 18 
+        [2, 0, 0, 0, 2],	// line 19 
     ],
 
-    payLines:[
+    payLines: [
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'Diamond'],
             pay: 3,
@@ -708,8 +723,8 @@ var slotConfig_3x5 = {
             freeSpins: 0
         },
     ],
-    
-    scatterPayTable:[
+
+    scatterPayTable: [
         {
             scattersCount: 3,
             pay: 0,
@@ -727,9 +742,9 @@ var slotConfig_3x5 = {
             pay: 0,
             freeSpins: 0,
             winEventString: 'slotConfig.showChestsPU_6' // this method will be called when winnings are shown (slotGame-> *winShowC) - chest mini-game
-        }    
+        }
     ],
-    
+
     // jackpot settings
     jackpot:
     {
@@ -739,7 +754,7 @@ var slotConfig_3x5 = {
         increaseValue: 1,           // jackpot increment after spin
     },
 
-    createSlotGraphic: function(scene){
+    createSlotGraphic: function (scene) {
         // scene.background =  scene.addSpriteLocPos('background', 0, 0); //?.setScale(1.5);
         // scene.background.depth = -5;
 
@@ -747,20 +762,19 @@ var slotConfig_3x5 = {
         //scene.debugreference.depth = 2000;
         //scene.debugreference.setAlpha(0.0);
 
-        scene.slot =  scene.addSpriteLocPos('slot', 0, -125); 
+        scene.slot = scene.addSpriteLocPos('slot', 0, -125);
         scene.slot.depth = -1;
 
-        scene.bottomPanel =  scene.addSpriteLocPos('bottom_panel', 0, 383); 
-        scene.bottomPanel_1 =  scene.addSpriteLocPos('bottom_panel', 1920, 383).setScale(-1,1); 
-        scene.bottomPanel_1 =  scene.addSpriteLocPos('bottom_panel', -1920, 383).setScale(-1,1); 
-        scene.paneljackpot =  scene.addSpriteLocPos('paneljackpot', 0, -552);    
-        scene.paneljackpot.setDepth(12); 
+        scene.bottomPanel = scene.addSpriteLocPos('bottom_panel', 0, 383);
+        scene.bottomPanel_1 = scene.addSpriteLocPos('bottom_panel', 1920, 383).setScale(-1, 1);
+        scene.bottomPanel_1 = scene.addSpriteLocPos('bottom_panel', -1920, 383).setScale(-1, 1);
+        scene.paneljackpot = scene.addSpriteLocPos('paneljackpot', 0, -552);
+        scene.paneljackpot.setDepth(12);
     },
 
-    createReels: function(scene) {
+    createReels: function (scene) {
         var _reels = [];
-        for(var ri = 0; ri < this.reels.length; ri++)
-        {
+        for (var ri = 0; ri < this.reels.length; ri++) {
             _reels.push(new Reel(scene, this.reels[ri], ri, this.symbolSizeY, this.reels[ri].windowsCount, true, this.spinTime, this.symbAnimFrameRate));
         }
         return _reels;
@@ -768,126 +782,151 @@ var slotConfig_3x5 = {
 
     // optional line buttons order
     lineButtonsLeftOrder: [4, 2, 8, 10, 6, 1, 7, 9, 3, 5],
-    lineButtonsRightOrder:[14, 20, 12, 18, 16, 11, 17, 13, 15, 19],
+    lineButtonsRightOrder: [14, 20, 12, 18, 16, 11, 17, 13, 15, 19],
 
     // the number of buttons must equal the number of lines
-    createLineButtons: function(scene) {
-        if(!this.lineButtonsLeftOrder || !this.lineButtonsRightOrder) return null;
+    createLineButtons: function (scene) {
+        if (!this.lineButtonsLeftOrder || !this.lineButtonsRightOrder) return null;
         var lineButtons = [];
-    //     for(var i = 0; i < this.lineButtonsLeftOrder.length; i++)
-    //  {
-    //      var lB = new LineButton(scene, 'button_line', 'button_line_hover', this.lineButtonsLeftOrder[i]);
-    //      lineButtons.push(lB); 
-    //      lB.create(-828,  -469 + 77 * i, 0.5, 0.5, 'gameFont_0', 48);
-    //     }
+        //     for(var i = 0; i < this.lineButtonsLeftOrder.length; i++)
+        //  {
+        //      var lB = new LineButton(scene, 'button_line', 'button_line_hover', this.lineButtonsLeftOrder[i]);
+        //      lineButtons.push(lB); 
+        //      lB.create(-828,  -469 + 77 * i, 0.5, 0.5, 'gameFont_0', 48);
+        //     }
 
-    //     for(var i = 0; i < this.lineButtonsRightOrder.length; i++)
-    //     {
-    //         var lB = new LineButton(scene, 'button_line', 'button_line_hover', this.lineButtonsRightOrder[i]);
-    //         lineButtons.push(lB); 
-    //         lB.create(828, -469 + 77 * i, 0.5, 0.5, 'gameFont_0', 48);
-    //         lB.button.setScale(-1, 1);
-    //     }
+        //     for(var i = 0; i < this.lineButtonsRightOrder.length; i++)
+        //     {
+        //         var lB = new LineButton(scene, 'button_line', 'button_line_hover', this.lineButtonsRightOrder[i]);
+        //         lineButtons.push(lB); 
+        //         lB.create(828, -469 + 77 * i, 0.5, 0.5, 'gameFont_0', 48);
+        //         lB.button.setScale(-1, 1);
+        //     }
 
-     lineButtons.sort((a, b) => a.number - b.number);
-     return lineButtons;
+        lineButtons.sort((a, b) => a.number - b.number);
+        return lineButtons;
     },
 
-    createControls: function(scene, slotControls) {
+    createControls: function (scene, slotControls) {
         let depth = 11;
         slotControls.spinTextString = 'SPIN';
 
         // panels
-        slotControls.linesPanel = scene.addSpriteLocPos('panel_lines', -815, 410); 
-        slotControls.linesPanel.setDepth(depth); 
+        slotControls.linesPanel = scene.addSpriteLocPos('panel_lines', -815, 410);
+        slotControls.linesPanel.setDepth(depth);
         slotControls.linebetPanel = scene.addSpriteLocPos('panel_linebet', -558, 410);
-        slotControls.linebetPanel.setDepth(depth); 
+        slotControls.linebetPanel.setDepth(depth);
         slotControls.totalbetPanel = scene.addSpriteLocPos('panel_totalbet', 682, 410);
-        slotControls.totalbetPanel.setDepth(depth); 
+        slotControls.totalbetPanel.setDepth(depth);
         slotControls.totalbetPanel.setVisible(false);
-        slotControls.balancePanel = scene.addSpriteLocPos('panel_balance', 558, 410); 
-        slotControls.balancePanel.setDepth(depth); 
-        slotControls.winPanel = scene.addSpriteLocPos('panel_win', 815, 410); 
-        slotControls.winPanel.setDepth(depth); 
+        slotControls.balancePanel = scene.addSpriteLocPos('panel_balance', 510, 410);
+        slotControls.balancePanel.setDepth(depth);
+        slotControls.winPanel = scene.addSpriteLocPos('panel_win', 780, 410);
+        slotControls.winPanel.setDepth(depth);
+
+
+        // slotControls.addmoneyPanel.addClickEvent(() => {
+        //     console.log('settings click');
+        //     var pu = scene.guiController.showPopUp(this.createSettingsPUHandler);
+        //     scene.soundController.playClip('button_click');
+        // }, this);
+
         // slotControls.menuPanel = scene.addSpriteLocPos('panel_menu', -730, -230); 
         // slotControls.menuPanel.setDepth(depth); 
         // slotControls.menuPanel.setVisible(false);
 
         // maxbet button
-        slotControls.slotMaxBetButton = new SceneButton(scene, 'button_maxbet', 'button_maxbet_hover', false);   
+        slotControls.slotMaxBetButton = new SceneButton(scene, 'button_maxbet', 'button_maxbet_hover', false);
         slotControls.buttons.push(slotControls.slotMaxBetButton);
         slotControls.slotMaxBetButton.create(-275, 385, 0.5, 0.5);
-        slotControls.slotMaxBetButton.addClickEvent(slotControls.maxBet_Click, slotControls);     
-        slotControls.slotMaxBetButton.setDepth(depth); 
+        slotControls.slotMaxBetButton.addClickEvent(slotControls.maxBet_Click, slotControls);
+        slotControls.slotMaxBetButton.setDepth(depth);
 
         // autoSpin button
-        slotControls.slotAutoSpinButton = new SceneButton(scene, 'button_autospin', 'button_autospin_hover', true); 
+        slotControls.slotAutoSpinButton = new SceneButton(scene, 'button_autospin', 'button_autospin_hover', true);
         slotControls.buttons.push(slotControls.slotAutoSpinButton);
         slotControls.slotAutoSpinButton.create(273, 385, 0.5, 0.5);
-        slotControls.slotAutoSpinButton.button.setVisible(true);   
-        slotControls.changeAutoSpinModeEvent.add((autoSpin)=>
-        {
-            if (!autoSpin)
-            {
+        slotControls.slotAutoSpinButton.button.setVisible(true);
+        slotControls.changeAutoSpinModeEvent.add((autoSpin) => {
+            if (!autoSpin) {
                 slotControls.slotAutoSpinButton.release();
             }
         }, this);
-        slotControls.slotAutoSpinButton.setDepth(depth); 
+        slotControls.slotAutoSpinButton.setDepth(depth);
 
         // spin button
-        slotControls.slotSpinButton = new SpinButton(scene, 'button_spin', 'button_spin_hover', false);   
+        slotControls.slotSpinButton = new SpinButton(scene, 'button_spin', 'button_spin_hover', false);
         slotControls.buttons.push(slotControls.slotSpinButton);
-        slotControls.slotSpinButton.create(-0, 370, 0.5, 0.5);    
-        slotControls.slotSpinButton.clickEvent.add(scene.handleAnimation, scene);  
-        slotControls.slotSpinButton.setDepth(depth); 
+        slotControls.slotSpinButton.create(-0, 370, 0.5, 0.5);
+        slotControls.slotSpinButton.clickEvent.add(scene.handleAnimation, scene);
+        slotControls.slotSpinButton.setDepth(depth);
 
         // menu button
-        slotControls.menuButton = new SceneButton(scene, 'button_menu', 'button_menu_hover', true);   
+        slotControls.menuButton = new SceneButton(scene, 'button_menu', 'button_menu_hover', true);
         slotControls.buttons.push(slotControls.menuButton);
         slotControls.menuButton.create(-905, -550, 0.5, 0.5);
-        slotControls.menuButton.addClickEvent(()=>{ 
+        slotControls.menuButton.addClickEvent(() => {
             console.log('menu click');
-            slotControls.settingsButton.button.setVisible(!slotControls.settingsButton.button.visible);  
-            slotControls.rulesButton.button.setVisible(!slotControls.rulesButton.button.visible); 
-            slotControls.slotInfoButton.button.setVisible(!slotControls.slotInfoButton.button.visible); 
-            slotControls.menuPanel.setVisible(!slotControls.menuPanel.visible); 
-            scene.soundController.playClip('button_click');}, this);
-        slotControls.menuButton.button.setVisible(true); 
-        slotControls.menuButton.setDepth(depth); 
+            slotControls.settingsButton.button.setVisible(!slotControls.settingsButton.button.visible);
+            slotControls.rulesButton.button.setVisible(!slotControls.rulesButton.button.visible);
+            slotControls.slotInfoButton.button.setVisible(!slotControls.slotInfoButton.button.visible);
+            slotControls.menuPanel.setVisible(!slotControls.menuPanel.visible);
+            scene.soundController.playClip('button_click');
+        }, this);
+        slotControls.menuButton.button.setVisible(true);
+        slotControls.menuButton.setDepth(depth);
 
         // settings button
-        slotControls.settingsButton = new SceneButton(scene, 'button_settings', 'button_settings_hover', false);   
+        slotControls.settingsButton = new SceneButton(scene, 'button_settings', 'button_settings_hover', false);
         slotControls.buttons.push(slotControls.settingsButton);
-        slotControls.settingsButton.create(-905 + 1*115, -550, 0.5, 0.5);
-        slotControls.settingsButton.addClickEvent(()=>{ 
+        slotControls.settingsButton.create(-905 + 1 * 115, -550, 0.5, 0.5);
+        slotControls.settingsButton.addClickEvent(() => {
             console.log('settings click');
             var pu = scene.guiController.showPopUp(this.createSettingsPUHandler);
-            scene.soundController.playClip('button_click');}, this);
-        slotControls.settingsButton.button.setVisible(false);  
-        slotControls.settingsButton.setDepth(depth); 
+            scene.soundController.playClip('button_click');
+        }, this);
+        slotControls.settingsButton.button.setVisible(false);
+        slotControls.settingsButton.setDepth(depth);
+
+
+        //add money button
+
+
+        slotControls.addmoneyButton = new SceneButton(scene, 'long-button', 'long-button-hover', true);
+        slotControls.buttons.push(slotControls.addmoneyButton);
+        slotControls.addmoneyButton.create(+1030, 410, 0.5, 0.5)
+        slotControls.addmoneyButton.setDepth(depth);
+        slotControls.addmoneyButton.addClickEvent(() => {
+            console.log('settings click');
+            var pu = scene.guiController.showPopUp(this.createaddmoneyPUHandle);
+            scene.soundController.playClip('button_click');
+        }, this);
+        // slotControls.addmoneyButton.setScale(30 , 30)
+
+
 
         // rules button
-       slotControls.rulesButton = new SceneButton(scene, 'button_rules', 'button_rules_hover', false);   
-       slotControls.buttons.push(slotControls.rulesButton);
-       slotControls.rulesButton.create(-905 + 2*115, -550, 0.5, 0.5);
-       slotControls.rulesButton.addClickEvent(()=>{
-           var pu = scene.guiController.showPopUp(this.createInfoPUHandler);
-           scene.soundController.playClip('button_click');
-       }, this);   
-       slotControls.rulesButton.button.setVisible(false); 
-       slotControls.rulesButton.setDepth(depth); 
+        slotControls.rulesButton = new SceneButton(scene, 'button_rules', 'button_rules_hover', false);
+        slotControls.buttons.push(slotControls.rulesButton);
+        slotControls.rulesButton.create(-905 + 2 * 115, -550, 0.5, 0.5);
+        slotControls.rulesButton.addClickEvent(() => {
+            var pu = scene.guiController.showPopUp(this.createInfoPUHandler);
+            scene.soundController.playClip('button_click');
+        }, this);
+        slotControls.rulesButton.button.setVisible(false);
+        slotControls.rulesButton.setDepth(depth);
 
-       // info button
-       slotControls.slotInfoButton = new SceneButton(scene, 'button_info', 'button_info_hover', false);   
-       slotControls.buttons.push(slotControls.slotInfoButton);
-       slotControls.slotInfoButton.create(-905 + 3*115, -550, 0.5, 0.5);
-       slotControls.slotInfoButton.addClickEvent(()=>{
+        // info button
+        slotControls.slotInfoButton = new SceneButton(scene, 'button_info', 'button_info_hover', false);
+        slotControls.buttons.push(slotControls.slotInfoButton);
+        slotControls.slotInfoButton.create(-905 + 3 * 115, -550, 0.5, 0.5);
+        slotControls.slotInfoButton.addClickEvent(() => {
             console.log('info click');
-           var pu = scene.guiController.showPopUp(this.createAboutPUHandler);
-           scene.soundController.playClip('button_click');
-       }, this);   
-       slotControls.slotInfoButton.button.setVisible(false); 
-       slotControls.slotInfoButton.setDepth(depth); 
+            var pu = scene.guiController.showPopUp(this.createAboutPUHandler);
+            scene.soundController.playClip('button_click');
+        }, this);
+        slotControls.slotInfoButton.button.setVisible(false);
+        slotControls.slotInfoButton.setDepth(depth);
 
         // totalbet minus button - not used
         /*
@@ -919,32 +958,32 @@ var slotConfig_3x5 = {
         // slotControls.slotLinesLoopButton.addClickEvent(slotControls.linesLoop_Click, slotControls);
 
         // lines minus button 
-         slotControls.linesMinusButton = new SceneButton(scene, 'button_minus','button_minus_hover', false);   
-         slotControls.buttons.push(slotControls.linesMinusButton);
-         slotControls.linesMinusButton.create(-815 - 92, 410, 0.5, 0.5);
-         slotControls.linesMinusButton.addClickEvent(slotControls.linesMinus_Click, slotControls);
-         slotControls.linesMinusButton.setDepth(depth); 
-         
+        slotControls.linesMinusButton = new SceneButton(scene, 'button_minus', 'button_minus_hover', false);
+        slotControls.buttons.push(slotControls.linesMinusButton);
+        slotControls.linesMinusButton.create(-815 - 92, 410, 0.5, 0.5);
+        slotControls.linesMinusButton.addClickEvent(slotControls.linesMinus_Click, slotControls);
+        slotControls.linesMinusButton.setDepth(depth);
+
         // lines plus button 
-         slotControls.linesPlusButton = new SceneButton(scene, 'button_plus','button_plus_hover', false);   
-         slotControls.buttons.push(slotControls.linesPlusButton);
-         slotControls.linesPlusButton.create(-815 + 92, 410, 0.5, 0.5);
-         slotControls.linesPlusButton.addClickEvent(slotControls.linesPlus_Click, slotControls);
-         slotControls.linesPlusButton.setDepth(depth); 
+        slotControls.linesPlusButton = new SceneButton(scene, 'button_plus', 'button_plus_hover', false);
+        slotControls.buttons.push(slotControls.linesPlusButton);
+        slotControls.linesPlusButton.create(-815 + 92, 410, 0.5, 0.5);
+        slotControls.linesPlusButton.addClickEvent(slotControls.linesPlus_Click, slotControls);
+        slotControls.linesPlusButton.setDepth(depth);
 
         // line bet minus button 
-        slotControls.lineBetMinusButton = new SceneButton(scene, 'button_minus','button_minus_hover', false);   
+        slotControls.lineBetMinusButton = new SceneButton(scene, 'button_minus', 'button_minus_hover', false);
         slotControls.buttons.push(slotControls.lineBetMinusButton);
         slotControls.lineBetMinusButton.create(-558 - 92, 410, 0.5, 0.5);
         slotControls.lineBetMinusButton.addClickEvent(slotControls.lineBetMinus_Click, slotControls);
-        slotControls.lineBetMinusButton.setDepth(depth); 
-        
-       // line bet plus button 
-        slotControls.lineBetPlusButton = new SceneButton(scene, 'button_plus','button_plus_hover', false);   
+        slotControls.lineBetMinusButton.setDepth(depth);
+
+        // line bet plus button 
+        slotControls.lineBetPlusButton = new SceneButton(scene, 'button_plus', 'button_plus_hover', false);
         slotControls.buttons.push(slotControls.lineBetPlusButton);
         slotControls.lineBetPlusButton.create(-558 + 92, 410, 0.5, 0.5);
         slotControls.lineBetPlusButton.addClickEvent(slotControls.lineBetPlus_Click, slotControls);
-        slotControls.lineBetPlusButton.setDepth(depth); 
+        slotControls.lineBetPlusButton.setDepth(depth);
 
         // adding the text fields
         slotControls.linesText = scene.add.bitmapText(scene.centerX - 815, scene.centerY + 333, 'gameFont_0', 'Lines', 47, 1).setOrigin(0.5);
@@ -958,25 +997,31 @@ var slotConfig_3x5 = {
         slotControls.lineBetText.tint = 0xfcf465;
         slotControls.lineBetAmountText = scene.add.bitmapText(scene.centerX - 558, scene.centerY + 406, 'gameFont_1', slotControls.lineBet, 63, 1).setOrigin(0.5);
         slotControls.lineBetAmountText.depth = depth;
- 
+
         slotControls.totalBetText = scene.add.bitmapText(scene.centerX + 747, scene.centerY + 333, 'gameFont_0', 'Total Bet', 47, 1).setOrigin(0.5);
-        slotControls.totalBetText.depth = depth; 
+        slotControls.totalBetText.depth = depth;
         slotControls.totalBetText.tint = 0xfcf465;
         slotControls.totalBetText.setVisible(false);
         slotControls.totalBetSumText = scene.add.bitmapText(scene.centerX + 801, scene.centerY + 406, 'gameFont_1', slotControls.getTotalBet(), 63, 1).setOrigin(0.5);
         slotControls.totalBetSumText.depth = depth;
         slotControls.totalBetSumText.setVisible(false);
- 
-        slotControls.creditText = scene.add.bitmapText(scene.centerX + 558, scene.centerY + 333, 'gameFont_0', 'Balance', 47, 1).setOrigin(0.5);
+
+        slotControls.creditText = scene.add.bitmapText(scene.centerX + 520, scene.centerY + 333, 'gameFont_0', 'Balance', 47, 1).setOrigin(0.5);
         slotControls.creditText.depth = depth;
         slotControls.creditText.tint = 0xfcf465;
-        slotControls.creditSumText = scene.add.bitmapText(scene.centerX + 558, scene.centerY + 406, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
+        slotControls.creditSumText = scene.add.bitmapText(scene.centerX + 520, scene.centerY + 406, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
         slotControls.creditSumText.depth = depth;
-         
-        slotControls.winText = scene.add.bitmapText(scene.centerX + 815, scene.centerY + 333, 'gameFont_0', 'Your Win', 46, 1).setOrigin(0.5);
+
+        slotControls.creditText = scene.add.bitmapText(scene.centerX + 1035, scene.centerY + 410, 'gameFont_1', 'Add Money', 43, 1).setOrigin(0.5);
+        slotControls.creditText.depth = depth;
+        // slotControls.creditText.tint = 0xfcf465;
+        // slotControls.creditSumText = scene.add.bitmapText(scene.centerX + 558, scene.centerY + 406, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
+        // slotControls.creditSumText.depth = depth;
+
+        slotControls.winText = scene.add.bitmapText(scene.centerX + 780, scene.centerY + 333, 'gameFont_0', 'Your Win', 46, 1).setOrigin(0.5);
         slotControls.winText.depth = depth;
         slotControls.winText.tint = 0xfcf465;
-        slotControls.winAmountText = scene.add.bitmapText(scene.centerX + 815, scene.centerY + 406, 'gameFont_1', '0', 63, 1).setOrigin(0.5);
+        slotControls.winAmountText = scene.add.bitmapText(scene.centerX + 780, scene.centerY + 406, 'gameFont_1', '0', 63, 1).setOrigin(0.5);
         slotControls.winAmountText.depth = depth;
 
         slotControls.jackpotText = scene.add.bitmapText(scene.centerX - 0, scene.centerY - 590, 'gameFont_0', 'Jackpot', 47, 1).setOrigin(0.5);
@@ -985,7 +1030,7 @@ var slotConfig_3x5 = {
         slotControls.jackpotText.tint = 0xfcf465;
         slotControls.jackpotAmountText = scene.add.bitmapText(scene.centerX + 0, scene.centerY - 535, 'gameFont_3', '0', 63, 1).setOrigin(0.5);
         slotControls.jackpotAmountText.setVisible(true);
-        slotControls.jackpotAmountText.depth = depth +1;
+        slotControls.jackpotAmountText.depth = depth + 1;
 
         slotControls.autoSpinText = scene.add.bitmapText(scene.centerX + 122, scene.centerY + 163 + 220, 'gameFont_2', 'AUTO', 37, 1).setOrigin(0.5);
         slotControls.autoSpinText.setLetterSpacing(-5);
@@ -1006,7 +1051,7 @@ var slotConfig_3x5 = {
         slotControls.maxBetText1.setLetterSpacing(4);
         slotControls.maxBetText1.depth = depth;
         slotControls.maxBetText1.setVisible(false);
-        
+
         slotControls.spinText = scene.add.bitmapText(scene.centerX - 1, scene.centerY + 378, 'gameFont_3', slotControls.spinTextString, 87, 1).setOrigin(0.5);
         // slotControls.spinText.setLetterSpacing(0.5);
         slotControls.spinText.depth = depth;
@@ -1044,25 +1089,23 @@ var slotConfig_3x5 = {
          slotControls.hold = new HoldFeature(scene, slotControls.holdButtons, this.maxHold); // create hold feature 
         */
     },
-   
-    createInfoPUHandler: function(popup)
-    {
-        function createSymbolPlate5x (popup, parentContainer, symbSpriteName, posX, posY, price3x,price4x, price5x)
-        {
+
+    createInfoPUHandler: function (popup) {
+        function createSymbolPlate5x(popup, parentContainer, symbSpriteName, posX, posY, price3x, price4x, price5x) {
             let symbContainer = popup.scene.add.container(posX, posY);
             parentContainer.add(symbContainer);
             let symbPanel = popup.scene.add.sprite(30, 0, 'symbol_plate').setOrigin(0.5);
             symbContainer.add(symbPanel);
             let symbIcon = popup.scene.add.sprite(-100, 0, symbSpriteName).setOrigin(0.5).setScale(0.8);
             symbContainer.add(symbIcon);
-    
+
             let textXPos = -0;
             let text3x = popup.scene.add.bitmapText(textXPos, 40, 'gameFont_0', '3X', 46, 1).setOrigin(0, 0.5);
             symbContainer.add(text3x);
             let text3x1 = popup.scene.add.bitmapText(textXPos + 55, 40, 'gameFont_0', '- ' + price3x, 46, 1).setOrigin(0, 0.5);
             text3x1.tint = 0xfef859;
             symbContainer.add(text3x1);
-    
+
             let text4x = popup.scene.add.bitmapText(textXPos, 0, 'gameFont_0', '4X', 46, 1).setOrigin(0, 0.5);
             symbContainer.add(text4x);
             let text4x1 = popup.scene.add.bitmapText(textXPos + 55, 0, 'gameFont_0', '- ' + price4x, 46, 1).setOrigin(0, 0.5);
@@ -1076,22 +1119,19 @@ var slotConfig_3x5 = {
             symbContainer.add(text5x1);
         };
 
-        function createSpecSymbolPlate(popup, parentContainer, symbSpriteName, posX, posY, info)
-        {
+        function createSpecSymbolPlate(popup, parentContainer, symbSpriteName, posX, posY, info) {
             let symbContainer = popup.scene.add.container(posX, posY);
             parentContainer.add(symbContainer);
             let symbIcon = popup.scene.add.sprite(0, 0, symbSpriteName).setOrigin(0.5, 0.5).setScale(0.8);
             symbContainer.add(symbIcon);
-    
+
             let textInfo = popup.scene.add.bitmapText(135, 0, 'gameFont_0', info, 44, 0).setOrigin(0, 0.5);
             // textInfo.tint = 0xd675dc;
             symbContainer.add(textInfo);
         };
-    
-        function refreshInfoPu (containers, selectors, index)
-        {         
-            for(let i = 0; i < containers.length; i++)
-            {
+
+        function refreshInfoPu(containers, selectors, index) {
+            for (let i = 0; i < containers.length; i++) {
                 containers[i].visible = (index === i);
                 /*
                 if(popup.scene.textures.exists('navi_dot_active') && popup.scene.textures.exists('navi_dot'))
@@ -1108,7 +1148,7 @@ var slotConfig_3x5 = {
         let offsetY = -100;
 
         // add background and panel
-        let backGround = popup.scene.add.sprite(0, 0 + offsetY, 'white_bkg').setOrigin(0.5).setScale(2000); 
+        let backGround = popup.scene.add.sprite(0, 0 + offsetY, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         popup.add(backGround);
@@ -1119,25 +1159,23 @@ var slotConfig_3x5 = {
         // let title = popup.scene.add.sprite(0, -388 + offsetY, 'help_title').setOrigin(0.5);
         // popup.add(title);
 
-        popup.addButton('exitButton','exit_button', 'exit_button_hover', false, 592, -322 + offsetY);
-        popup.addButton('nextButton','next_button', 'next_button_hover', false, 55, 425 + offsetY);
-        popup.addButton('prevButton','prev_button', 'prev_button_hover', false, -75, 425 + offsetY);
-        popup['exitButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['nextButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['prevButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
+        popup.addButton('exitButton', 'exit_button', 'exit_button_hover', false, 592, -322 + offsetY);
+        popup.addButton('nextButton', 'next_button', 'next_button_hover', false, 55, 425 + offsetY);
+        popup.addButton('prevButton', 'prev_button', 'prev_button_hover', false, -75, 425 + offsetY);
+        popup['exitButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['nextButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['prevButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
 
-        popup['exitButton'].clickEvent.add(()=>{popup.scene.guiController.closePopUp(popup);});
+        popup['exitButton'].clickEvent.add(() => { popup.scene.guiController.closePopUp(popup); });
 
-        popup['nextButton'].clickEvent.add(()=>
-        {
-            if(index < containers.length - 1) index++;
+        popup['nextButton'].clickEvent.add(() => {
+            if (index < containers.length - 1) index++;
             else index = 0;
             refreshInfoPu(containers, selectors, index);
         }, this);
 
-        popup['prevButton'].clickEvent.add(()=>
-        {
-            if(index > 0) index--;
+        popup['prevButton'].clickEvent.add(() => {
+            if (index > 0) index--;
             else index = containers.length - 1;
             refreshInfoPu(containers, selectors, index);
         }, this);
@@ -1148,10 +1186,10 @@ var slotConfig_3x5 = {
         popup.add(linesContainer);
         let linesTitle = popup.scene.add.sprite(-10, -375, 'paylines_title').setOrigin(0.5); // popup.scene.add.bitmapText(0, -380, 'gameFont_1', 'Pay Lines', 100, 1).setOrigin(0.5); // text 
         linesContainer.add(linesTitle);
-        let linesTable =  popup.scene.add.sprite(-28, -38, 'paylines_table').setOrigin(0.5);
+        let linesTable = popup.scene.add.sprite(-28, -38, 'paylines_table').setOrigin(0.5);
         linesContainer.add(linesTable);
-        let linesText = popup.scene.add.bitmapText(0, 252, 'gameFont_0', 
-        'Bet lines win if the winning symbols are in succession from the \n'+' leftmost reel to right', 46, 1).setOrigin(0.5);
+        let linesText = popup.scene.add.bitmapText(0, 252, 'gameFont_0',
+            'Bet lines win if the winning symbols are in succession from the \n' + ' leftmost reel to right', 46, 1).setOrigin(0.5);
         linesText.tint = 0xfef859;
         linesText.setLetterSpacing(1.35);
         linesContainer.add(linesText);
@@ -1171,7 +1209,7 @@ var slotConfig_3x5 = {
         let col3X = col2X + colDist;
 
         // minor row 1
-        createSymbolPlate5x(popup, minorContainer, 'Diamond',  col1X + 0.5 * colDist, row1Y, 1, 2, 3);
+        createSymbolPlate5x(popup, minorContainer, 'Diamond', col1X + 0.5 * colDist, row1Y, 1, 2, 3);
         createSymbolPlate5x(popup, minorContainer, 'Heart', col2X + 0.5 * colDist, row1Y, 1, 3, 5);
 
         // minor row 2
@@ -1187,12 +1225,12 @@ var slotConfig_3x5 = {
         majorContainer.add(majorTitle);
 
         // major row 1
-        createSymbolPlate5x(popup, majorContainer , 'Jsymb', col1X + 0.5 * colDist, row1Y, 11, 13, 17);
-        createSymbolPlate5x(popup, majorContainer , 'Qsymb', col2X + 0.5 * colDist, row1Y, 11, 13, 19);
+        createSymbolPlate5x(popup, majorContainer, 'Jsymb', col1X + 0.5 * colDist, row1Y, 11, 13, 17);
+        createSymbolPlate5x(popup, majorContainer, 'Qsymb', col2X + 0.5 * colDist, row1Y, 11, 13, 19);
 
         // major row 2
-        createSymbolPlate5x(popup, majorContainer , 'Ksymb', col1X + 0.5 * colDist, row2Y, 11, 14, 20);
-        createSymbolPlate5x(popup, majorContainer , 'Asymb', col2X + 0.5 * colDist, row2Y, 11, 15, 25);
+        createSymbolPlate5x(popup, majorContainer, 'Ksymb', col1X + 0.5 * colDist, row2Y, 11, 14, 20);
+        createSymbolPlate5x(popup, majorContainer, 'Asymb', col2X + 0.5 * colDist, row2Y, 11, 15, 25);
         majorContainer.visible = false;
 
         // create special symbols panel
@@ -1201,14 +1239,14 @@ var slotConfig_3x5 = {
         popup.add(specialContainer);
         let specialTitle = popup.scene.add.sprite(-10, -375, 'special_title').setOrigin(0.5); // image popup.scene.add.bitmapText(0, -380, 'gameFont_1', 'Special  Symbols', 100, 1).setOrigin(0.5); //
         specialContainer.add(specialTitle);
-    
+
         // special row 1
         createSpecSymbolPlate(popup, specialContainer, 'Wild', -450, -200, 'Wild can be used with any symbols on the reels to create \nwinning combinations (exclude first reel).');
-        createSpecSymbolPlate(popup, specialContainer, 'Scatter', -450 , 0, 
-        'Any 5 scatter symbols on the screen trigger a big mini-game.\n'+
-        'Any 4 scatter  on the screen  give the player 4 free spins.\n'+
-        'Any 3 scatter  on the screen  give the player 3 free spins.');
-        createSpecSymbolPlate(popup, specialContainer, 'Bonus', -450 , 200, 'Any 6 bonus symbols scattered on the screen = Jackpot Win.');
+        createSpecSymbolPlate(popup, specialContainer, 'Scatter', -450, 0,
+            'Any 5 scatter symbols on the screen trigger a big mini-game.\n' +
+            'Any 4 scatter  on the screen  give the player 4 free spins.\n' +
+            'Any 3 scatter  on the screen  give the player 3 free spins.');
+        createSpecSymbolPlate(popup, specialContainer, 'Bonus', -450, 200, 'Any 6 bonus symbols scattered on the screen = Jackpot Win.');
         specialContainer.visible = false;
 
         // create rules panel
@@ -1218,43 +1256,42 @@ var slotConfig_3x5 = {
         let rulesTitle = popup.scene.add.sprite(-10, -375, 'rules_title').setOrigin(0.5); // image popup.scene.add.bitmapText(0, -380, 'gameFont_1', 'Rules', 100, 1).setOrigin(0.5); //
         rulesContainer.add(rulesTitle);
 
-        let aboutTitle = popup.scene.add.bitmapText(-580, -140 - 85, 'gameFont_1', 'ABOUT THE GAME', 46, 0).setOrigin(0,0.5); // text
+        let aboutTitle = popup.scene.add.bitmapText(-580, -140 - 85, 'gameFont_1', 'ABOUT THE GAME', 46, 0).setOrigin(0, 0.5); // text
         rulesContainer.add(aboutTitle);
         let aboutText = popup.scene.add.bitmapText(-580, -100 - 85, 'gameFont_0',
-        '', 46, 0).setOrigin(0, 0); // text
+            '', 46, 0).setOrigin(0, 0); // text
         aboutText.setLetterSpacing(-0.7);
         aboutText.tint = 0xfef859;
         rulesContainer.add(aboutText);
 
 
-        let howTitle = popup.scene.add.bitmapText(-580, 80, 'gameFont_1', 'HOW TO PLAY', 46, 0).setOrigin(0,0.5); // text
+        let howTitle = popup.scene.add.bitmapText(-580, 80, 'gameFont_1', 'HOW TO PLAY', 46, 0).setOrigin(0, 0.5); // text
         rulesContainer.add(howTitle);
         let howText = popup.scene.add.bitmapText(-580, 120, 'gameFont_0',
-        '- Place your bet \n- Press the Spin button to start game \n- You can also use Max Bet button to auto bet', 46, 0).setOrigin(0, 0); // text
+            '- Place your bet \n- Press the Spin button to start game \n- You can also use Max Bet button to auto bet', 46, 0).setOrigin(0, 0); // text
         howText.setLetterSpacing(-0.7);
         howText.tint = 0xfef859;
         rulesContainer.add(howText);
 
         // create navi selectors
-   /*
-        let dotDist = 50;
-        let offsetDots = dotDist * (containers.length - 1) / 2;
-        if(popup.scene.textures.exists('navi_dot_active') && popup.scene.textures.exists('navi_dot'))
-        {
-            for(let i = 0; i < containers.length; i++)
-            {
-                var selector = popup.scene.add.sprite(-offsetDots + i * dotDist, 490 + offsetY, 'navi_dot').setOrigin(0.5);
-                selectors.push(selector);
-                popup.add(selector);
-            }
-        }
-    */
+        /*
+             let dotDist = 50;
+             let offsetDots = dotDist * (containers.length - 1) / 2;
+             if(popup.scene.textures.exists('navi_dot_active') && popup.scene.textures.exists('navi_dot'))
+             {
+                 for(let i = 0; i < containers.length; i++)
+                 {
+                     var selector = popup.scene.add.sprite(-offsetDots + i * dotDist, 490 + offsetY, 'navi_dot').setOrigin(0.5);
+                     selectors.push(selector);
+                     popup.add(selector);
+                 }
+             }
+         */
         refreshInfoPu(containers, selectors, index);
 
     },
 
-    createAboutPUHandler: function(popup)
-    {     
+    createAboutPUHandler: function (popup) {
         let yOffset = -70;
         // add background and panel
         let backGround = popup.scene.add.sprite(0, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000); // popup.scene.add.sprite(0, 0 + yOffset, 'pu_background').setOrigin(0.5).setScale(1);
@@ -1280,32 +1317,30 @@ var slotConfig_3x5 = {
         popup.add(popup.messageText);
 
         // add buttons
-        popup.addButton('supportButton','long_button', 'long_button_hover', false, -10, 140 + yOffset);
-        popup.addButton('exitButton','exit_button', 'exit_button_hover', false, 258, -285  + yOffset);
+        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10, 140 + yOffset);
+        popup.addButton('exitButton', 'exit_button', 'exit_button_hover', false, 258, -285 + yOffset);
 
-        popup['supportButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['supportButton'].clickEvent.add(()=>{window.open("https://www.onehubplay.com/"); }, popup);
-        
-        popup['exitButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['exitButton'].clickEvent.add(()=>{popup.scene.guiController.closePopUp(popup);});
+        popup['supportButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['supportButton'].clickEvent.add(() => { window.open("https://www.onehubplay.com/"); }, popup);
+
+        popup['exitButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['exitButton'].clickEvent.add(() => { popup.scene.guiController.closePopUp(popup); });
 
         // add support button text
         popup.supText = popup.scene.add.bitmapText(-10, 145 + yOffset, 'gameFont_3', 'SUPPORT', 63, 1).setOrigin(0.5);
         popup.add(popup.supText);
     },
 
-    createSettingsPUHandler: function(popup)
-    {    
-        function refreshIcons (popup)
-        {
-           // popup.soundIcon.setTexture( popup.scene.soundController._soundOn ? 'soundon' : 'soundoff');
-           // popup.musicIcon.setTexture( popup.scene.soundController._musicOn ? 'musicon' : 'musicoff');
+    createSettingsPUHandler: function (popup) {
+        function refreshIcons(popup) {
+            // popup.soundIcon.setTexture( popup.scene.soundController._soundOn ? 'soundon' : 'soundoff');
+            // popup.musicIcon.setTexture( popup.scene.soundController._musicOn ? 'musicon' : 'musicoff');
             // console.log('refresh');
         }
 
-        let yOffset = -70;   
+        let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000); 
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         popup.add(backGround);
@@ -1322,35 +1357,35 @@ var slotConfig_3x5 = {
         popup.add(popup.musicText);
 
         // sound and music buttons
-        popup.addButton('soundButton','button_on', 'button_off', true, 100, -127 + yOffset);
-        popup.addButton('musicButton','button_on', 'button_off', true,  -120, -127 + yOffset);
+        popup.addButton('soundButton', 'button_on', 'button_off', true, 100, -127 + yOffset);
+        popup.addButton('musicButton', 'button_on', 'button_off', true, -120, -127 + yOffset);
 
-        popup['soundButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['soundButton'].clickEvent.add(()=>{popup.scene.soundController.soundOn(!popup.scene.soundController._soundOn);refreshIcons (popup);}, popup);
-        if(!popup.scene.soundController._soundOn) popup['soundButton'].setPressed();
+        popup['soundButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['soundButton'].clickEvent.add(() => { popup.scene.soundController.soundOn(!popup.scene.soundController._soundOn); refreshIcons(popup); }, popup);
+        if (!popup.scene.soundController._soundOn) popup['soundButton'].setPressed();
 
-        popup['musicButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['musicButton'].clickEvent.add(()=>{popup.scene.soundController.musicOn(!popup.scene.soundController._musicOn);refreshIcons (popup);}, popup);
-        if(!popup.scene.soundController._musicOn) popup['musicButton'].setPressed();
-/*
-        popup.soundIcon = popup.scene.add.sprite(-231, -82 + yOffset, 'soundon').setOrigin(0.5);
-        popup.add(popup.soundIcon);
-        popup.musicIcon = popup.scene.add.sprite(56, -82 + yOffset, 'musicon').setOrigin(0.5);
-        popup.add(popup.musicIcon);
-*/
+        popup['musicButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['musicButton'].clickEvent.add(() => { popup.scene.soundController.musicOn(!popup.scene.soundController._musicOn); refreshIcons(popup); }, popup);
+        if (!popup.scene.soundController._musicOn) popup['musicButton'].setPressed();
+        /*
+                popup.soundIcon = popup.scene.add.sprite(-231, -82 + yOffset, 'soundon').setOrigin(0.5);
+                popup.add(popup.soundIcon);
+                popup.musicIcon = popup.scene.add.sprite(56, -82 + yOffset, 'musicon').setOrigin(0.5);
+                popup.add(popup.musicIcon);
+        */
         // privacy ant terms buttons
-        popup.addButton('privacyButton','extralong_button', 'extralong_button_hover', false, -12, 22 + yOffset);
-        popup.addButton('exitButton','exit_button', 'exit_button_hover', false, 335, -271 + yOffset);
-        popup.addButton('termsButton','extralong_button', 'extralong_button_hover', false, -12, 180 + yOffset);
+        popup.addButton('privacyButton', 'extralong_button', 'extralong_button_hover', false, -12, 22 + yOffset);
+        popup.addButton('exitButton', 'exit_button', 'exit_button_hover', false, 335, -271 + yOffset);
+        popup.addButton('termsButton', 'extralong_button', 'extralong_button_hover', false, -12, 180 + yOffset);
 
-        popup['privacyButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['privacyButton'].clickEvent.add(()=>{window.open("https://www.onehubplay.com/privacy"); }, popup);
-        
-        popup['termsButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['termsButton'].clickEvent.add(()=>{window.open("https://www.onehubplay.com/terms-condition"); }, popup);
+        popup['privacyButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['privacyButton'].clickEvent.add(() => { window.open("https://www.onehubplay.com/privacy"); }, popup);
 
-        popup['exitButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['exitButton'].clickEvent.add(()=>{popup.scene.guiController.closePopUp(popup);});
+        popup['termsButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['termsButton'].clickEvent.add(() => { window.open("https://www.onehubplay.com/terms-condition"); }, popup);
+
+        popup['exitButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['exitButton'].clickEvent.add(() => { popup.scene.guiController.closePopUp(popup); });
 
         // privacy ant terms buttons text
         popup.privacyText = popup.scene.add.bitmapText(-11, 30 + yOffset, 'gameFont_3', 'PRIVACY POLICY', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
@@ -1361,16 +1396,54 @@ var slotConfig_3x5 = {
         refreshIcons(popup);
     },
 
-    createFreeGamesPUHandler: function(popup)
-    {
-        let yOffset = -70;   
+    createaddmoneyPUHandle: function (popup) {
+        let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000); 
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
+        backGround.setInteractive(); // block bottom controls
+        backGround.tint = 0x1e1c20;
+        popup.add(backGround);
+
+        
+        let panel = popup.scene.add.sprite(-10, -15 + yOffset, 'message_panel').setOrigin(0.5).setScale(1.6);
+        popup.add(panel);
+        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,200 + yOffset);
+        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -300,30 + yOffset);
+        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,30 + yOffset);
+        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, 280,30 + yOffset);
+        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -300,-130 + yOffset);
+        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,-130 + yOffset);
+        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, 280,-130 + yOffset);
+
+        popup.addButton('exitButton', 'exit_button', 'exit_button_hover', false, 430, -300 + yOffset);
+        popup['exitButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['exitButton'].clickEvent.add(() => { popup.scene.guiController.closePopUp(popup); });
+
+        popup.ten = popup.scene.add.bitmapText(-11, 210 + yOffset, 'gameFont_3', '$500', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+        popup.add(popup.ten);
+        popup.ten = popup.scene.add.bitmapText(-11, 40 + yOffset, 'gameFont_3', '$300', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+        popup.add(popup.ten);
+        popup.ten = popup.scene.add.bitmapText(-300, 40 + yOffset, 'gameFont_3', '$200', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+        popup.add(popup.ten);
+        popup.ten = popup.scene.add.bitmapText(280, 40 + yOffset, 'gameFont_3', '$400', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+        popup.add(popup.ten);
+        popup.ten = popup.scene.add.bitmapText(-300, -120 + yOffset, 'gameFont_3', '$10', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+        popup.add(popup.ten);
+        popup.ten = popup.scene.add.bitmapText(-11, -120 + yOffset, 'gameFont_3', '$50', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+        popup.add(popup.ten);
+        popup.ten = popup.scene.add.bitmapText(280, -120 + yOffset, 'gameFont_3', '$100', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+        popup.add(popup.ten);
+
+    },
+
+    createFreeGamesPUHandler: function (popup) {
+        let yOffset = -70;
+        // add background and panel
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         backGround.setAlpha(0.5);
         popup.add(backGround);
-
         let panel = popup.scene.add.sprite(0, -5 + yOffset, 'freespin_panel').setOrigin(0.5);
         popup.add(panel);
 
@@ -1384,17 +1457,16 @@ var slotConfig_3x5 = {
         popup.add(popup.messageText);
 
         // add buttons
-        popup.addButton('okButton','small_button', 'small_button_hover', false, 0, 250 + yOffset);
-        popup['okButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-        popup['okButton'].clickEvent.add(()=>{popup.scene.guiController.closePopUp(popup);});
+        popup.addButton('okButton', 'small_button', 'small_button_hover', false, 0, 250 + yOffset);
+        popup['okButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+        popup['okButton'].clickEvent.add(() => { popup.scene.guiController.closePopUp(popup); });
         // add button text
         popup.okText = popup.scene.add.bitmapText(0, 248 + yOffset, 'gameFont_3', 'START', 46, 1).setOrigin(0.5);
         popup.add(popup.okText);
     },
 
-    createFreeSpinsWinPUHandler: function(popup)
-    {
-        let yOffset = -70;   
+    createFreeSpinsWinPUHandler: function (popup) {
+        let yOffset = -70;
         // add background and panel
         let backGround = popup.scene.add.sprite(0, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
@@ -1410,16 +1482,15 @@ var slotConfig_3x5 = {
         popup.add(popup.messageText);
     },
 
-    createBigWinPUHandler: function(popup)
-    {
-        let yOffset = -70; 
+    createBigWinPUHandler: function (popup) {
+        let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000); 
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         backGround.setAlpha(0.3);
         popup.add(backGround);
- 
+
         let panel = popup.scene.add.sprite(0, -5 + yOffset, 'bigwin_panel').setOrigin(0.5); // -110
         popup.add(panel);
 
@@ -1429,35 +1500,33 @@ var slotConfig_3x5 = {
         popup.add(popup.messageText);
     },
 
-    createHugeWinPUHandler: function(popup)
-    {
-        let yOffset = -70; 
+    createHugeWinPUHandler: function (popup) {
+        let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000); 
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         backGround.setAlpha(0.3);
         popup.add(backGround);
- 
+
         let panel = popup.scene.add.sprite(0, -5 + yOffset, 'hugewin_panel').setOrigin(0.5); // -110
         popup.add(panel);
 
         // add message
         popup.messageText = popup.scene.add.bitmapText(0, 110 + yOffset, 'gameFont_3', '0', 86, 1).setOrigin(0.5); // 190
         popup.messageText.setLetterSpacing(1.4);
-        popup.add(popup.messageText);         
+        popup.add(popup.messageText);
     },
 
-    createMegaWinPUHandler: function(popup)
-    {
-        let yOffset = -70; 
+    createMegaWinPUHandler: function (popup) {
+        let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000); 
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         backGround.setAlpha(0.3);
         popup.add(backGround);
- 
+
         let panel = popup.scene.add.sprite(0, -5 + yOffset, 'megawin_panel').setOrigin(0.5); // -110
         popup.add(panel);
 
@@ -1467,16 +1536,15 @@ var slotConfig_3x5 = {
         popup.add(popup.messageText);
     },
 
-    createJackpotWinPUHandler: function(popup)
-    {
-        let yOffset = -70; 
+    createJackpotWinPUHandler: function (popup) {
+        let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000); 
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         backGround.setAlpha(0.3);
         popup.add(backGround);
- 
+
         let panel = popup.scene.add.sprite(0, -5 + yOffset, 'jackpotwin_panel').setOrigin(0.5); // -110
         popup.add(panel);
 
@@ -1487,21 +1555,19 @@ var slotConfig_3x5 = {
     },
 
     // just for blocking controls
-    createEmptyPUHandler: function(popup)
-    {
+    createEmptyPUHandler: function (popup) {
         // add background and panel
         let backGround = popup.scene.add.sprite(0, 0, 'gray_01').setOrigin(0.5).setScale(1000);
         backGround.setInteractive(); // block bottom controls
         popup.add(backGround);
 
-      // popup.debugText = popup.scene.add.bitmapText(0, 0, 'gameFont_2', 'EMPTY PU', 55, 1).setOrigin(0.5);
-      // popup.add(popup.debugText);
+        // popup.debugText = popup.scene.add.bitmapText(0, 0, 'gameFont_2', 'EMPTY PU', 55, 1).setOrigin(0.5);
+        // popup.add(popup.debugText); 
     },
 
     // only message
-    createSmallMessagePUHandler:function(popup)
-    {
-        let yOffset = -70; 
+    createSmallMessagePUHandler: function (popup) {
+        let yOffset = -70;
         // add background and panel
         let backGround = popup.scene.add.sprite(0, -40 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
@@ -1518,101 +1584,91 @@ var slotConfig_3x5 = {
     },
 
     // there are a lot of coins in the 6 chests
-    createChestGamePUHandler_6: function(popup)
-    {
-        let yOffset = -70; 
+    createChestGamePUHandler_6: function (popup) {
+        let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(0, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000); 
+        let backGround = popup.scene.add.sprite(0, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         popup.add(backGround);
- 
+
         let panel = popup.scene.add.sprite(0, -0 + yOffset, 'chestgame_panel').setOrigin(0.5); // -110
         popup.add(panel);
-        popup.closeEvent.add(()=>{popup.scene.showCoins(false);}, this);
+        popup.closeEvent.add(() => { popup.scene.showCoins(false); }, this);
 
         let chestArray = [];
-        function addChest(chestName, posX, posY, coins)
-        {
+        function addChest(chestName, posX, posY, coins) {
             // create chest button
-            popup.addButton(chestName,'chest_closed', 'chest_opened', true, posX, posY + yOffset);
+            popup.addButton(chestName, 'chest_closed', 'chest_opened', true, posX, posY + yOffset);
             popup[chestName].coins = coins;
             chestArray.push(popup[chestName]);
-            popup['coinimage_'+ chestName] = popup.scene.add.sprite(-40 + posX, 3 + yOffset + posY, 'chestgame_coin').setOrigin(0.5);
-            popup.add(popup['coinimage_'+ chestName]);
-            popup['coinimage_'+ chestName].setVisible(false);
-            popup['mess_'+ chestName] = popup.scene.add.bitmapText(-5 + posX, 0 + yOffset + posY, 'gameFont_2', coins, 63, 1).setOrigin(0, 0.5); 
-            popup.add(popup['mess_'+ chestName]);
-            popup['mess_'+ chestName].setVisible(false);
-            
+            popup['coinimage_' + chestName] = popup.scene.add.sprite(-40 + posX, 3 + yOffset + posY, 'chestgame_coin').setOrigin(0.5);
+            popup.add(popup['coinimage_' + chestName]);
+            popup['coinimage_' + chestName].setVisible(false);
+            popup['mess_' + chestName] = popup.scene.add.bitmapText(-5 + posX, 0 + yOffset + posY, 'gameFont_2', coins, 63, 1).setOrigin(0, 0.5);
+            popup.add(popup['mess_' + chestName]);
+            popup['mess_' + chestName].setVisible(false);
+
             // add click event
-            popup[chestName].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
-            popup[chestName].clickEvent.add(()=>{
-                popup['mess_'+ chestName].setVisible(true); 
+            popup[chestName].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+            popup[chestName].clickEvent.add(() => {
+                popup['mess_' + chestName].setVisible(true);
                 popup.scene.showCoins(true);
-                popup['coinimage_'+ chestName].setVisible(true);
-               
-                chestArray.forEach((chest)=>
-                {
+                popup['coinimage_' + chestName].setVisible(true);
+
+                chestArray.forEach((chest) => {
                     chest.setInteractable(false);
                 });
-                new SimpleTweenFloat(this, 0, 1, 3000, (p, dp) =>{ },  ()=>
-                {
+                new SimpleTweenFloat(this, 0, 1, 3000, (p, dp) => { }, () => {
                     popup.scene.slotPlayer.addCoins(popup[chestName].coins);
                     popup.scene.guiController.closePopUp(popup);
                 }); // just delay action   before close
-/**/
+                /**/
             }, popup);
         }
 
-        function shuffle(array){ 
-            for (let i = array.length - 1; i > 0; i--) { 
-              const j = Math.floor(Math.random() * (i + 1)); 
-              [array[i], array[j]] = [array[j], array[i]]; 
-            } 
-            return array; 
-          };  
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        };
 
         let chestCoins = [10, 20, 50, 100, 150, 200];
-        let shufflechestCoins = shuffle(chestCoins); 
+        let shufflechestCoins = shuffle(chestCoins);
 
         var rowY1 = -200;
         var rowY2 = 112;
-        addChest('chest_2', -299+45, rowY1, shufflechestCoins[0]); addChest('chest_1', -3, rowY1, shufflechestCoins[1]);  addChest('chest_3', 259-22, rowY1, shufflechestCoins[2]);
-        addChest('chest_5', -299 +45, rowY2, shufflechestCoins[3]); addChest('chest_4', -3, rowY2, shufflechestCoins[4]); addChest('chest_6', 259 -22, rowY2, shufflechestCoins[5]);
-        
-        popup.messageText = popup.scene.add.bitmapText(0, 325 + yOffset, 'gameFont_2', 'Choose any chest', 48, 1).setOrigin(0.5);      
+        addChest('chest_2', -299 + 45, rowY1, shufflechestCoins[0]); addChest('chest_1', -3, rowY1, shufflechestCoins[1]); addChest('chest_3', 259 - 22, rowY1, shufflechestCoins[2]);
+        addChest('chest_5', -299 + 45, rowY2, shufflechestCoins[3]); addChest('chest_4', -3, rowY2, shufflechestCoins[4]); addChest('chest_6', 259 - 22, rowY2, shufflechestCoins[5]);
+
+        popup.messageText = popup.scene.add.bitmapText(0, 325 + yOffset, 'gameFont_2', 'Choose any chest', 48, 1).setOrigin(0.5);
         popup.add(popup.messageText);
     },
-    
+
     // there are a lot of coins in the 6 chests
-    showChestsPU_6: function(scene)
-    {
-        scene.guiController.showPopUp(slotConfig.createChestGamePUHandler_6); 
+    showChestsPU_6: function (scene) {
+        scene.guiController.showPopUp(slotConfig.createChestGamePUHandler_6);
     },
 }
 
-class AnimatedCoinParticle extends Phaser.GameObjects.Particles.Particle
-{
-    constructor (emitter)
-    {
+class AnimatedCoinParticle extends Phaser.GameObjects.Particles.Particle {
+    constructor(emitter) {
         super(emitter);
 
         this.t = 0;
         this.i = 0;
         this.framesCount = 6;
     }
-	
-    update (delta, step, processors)
-    {
+
+    update(delta, step, processors) {
         var result = super.update(delta, step, processors);
         this.t += delta;
 
-        if (this.t >= coinSpinAnim.msPerFrame)
-        {
+        if (this.t >= coinSpinAnim.msPerFrame) {
             this.i++;
-            if (this.i > this.framesCount-1)
-            {
+            if (this.i > this.framesCount - 1) {
                 this.i = 0;
             }
             this.frame = coinSpinAnim.frames[this.i].frame;
@@ -1622,24 +1678,22 @@ class AnimatedCoinParticle extends Phaser.GameObjects.Particles.Particle
     }
 }
 
-class ProgressSlider
-{
-    constructor(scene, baseLocPosX, baseLocPosY, baseSprite, fillLocPosX, fillLocPosY, fillSprite, spotSprite, depth)
-    {
+class ProgressSlider {
+    constructor(scene, baseLocPosX, baseLocPosY, baseSprite, fillLocPosX, fillLocPosY, fillSprite, spotSprite, depth) {
         this.fillAmount = 0;
         this.scene = scene;
         this.fillLocPosX = fillLocPosX;
         this.fillLocPosY = fillLocPosY;
-        this.baseSprite = scene.addSpriteLocPos(baseSprite, baseLocPosX, baseLocPosY); 
+        this.baseSprite = scene.addSpriteLocPos(baseSprite, baseLocPosX, baseLocPosY);
         this.baseSprite.setDepth(depth);
-        this.fillSprite = scene.addSpriteLocPos(fillSprite, fillLocPosX, fillLocPosY); 
+        this.fillSprite = scene.addSpriteLocPos(fillSprite, fillLocPosX, fillLocPosY);
         this.fillSprite.setDepth(depth + 1);
 
         this.sizeX = this.fillSprite.width;
         this.sizeY = this.fillSprite.height;
         // console.log('mask sizeX: ' + sizeX  + ' ;mask sizeY: ' + sizeY);
 
-        this.spotSprite = scene.addSpriteLocPos(spotSprite, fillLocPosX - this.sizeX / 2, fillLocPosY); 
+        this.spotSprite = scene.addSpriteLocPos(spotSprite, fillLocPosX - this.sizeX / 2, fillLocPosY);
         this.spotSprite.setDepth(depth + 2);
 
         this.shapePosX = scene.centerX + fillLocPosX - this.sizeX / 2;
@@ -1652,20 +1706,19 @@ class ProgressSlider
         this.shape.setVisible(false);
 
         this.gMask = this.shape.createGeometryMask();
-        this.fillSprite.setMask(this.gMask);   
+        this.fillSprite.setMask(this.gMask);
 
         this.setFillAmount(this.fillAmount);
     }
 
-    setFillAmount(amount)
-    {
-        if(amount > 1) amount = 1;
-        if(amount < 0) amount = 0;
+    setFillAmount(amount) {
+        if (amount > 1) amount = 1;
+        if (amount < 0) amount = 0;
         this.fillAmount = amount;
         var _sizeX = this.sizeX * amount;
         this.shape.clear();
-        this.shape.fillRect(this.shapePosX, this.shapePosY, _sizeX, -this.sizeY);  
-        this.spotSprite.setPosition(this.shapePosX +_sizeX, this.scene.centerY + this.fillLocPosY);
+        this.shape.fillRect(this.shapePosX, this.shapePosY, _sizeX, -this.sizeY);
+        this.spotSprite.setPosition(this.shapePosX + _sizeX, this.scene.centerY + this.fillLocPosY);
         this.spotSprite.setVisible(this.fillAmount > 0);
     }
 }
