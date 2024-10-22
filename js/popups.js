@@ -60,9 +60,15 @@ function createGameMessagePUHandler(popup)
     popup.messageText = popup.scene.add.bitmapText(0, 40 + yOffset, 'gameFont_1', 'Message', 46, 1).setOrigin(0.5);
     popup.add(popup.messageText);
 
+
+
+
     // add buttons
     popup.addButton('exitButton','exit_button', 'exit_button_hover', false, 280, -185 + yOffset);
     popup['exitButton'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
+
+    // popup.addButton('panelmoney', 'panel-addmoney' , 'hover-panel-addmoney' , false ,  200, -185 + yOffset)
+    // popup['panelmoney'].clickEvent.add(()=>{popup.scene.soundController.playClip('button_click', false);}, popup);
 }
 
 

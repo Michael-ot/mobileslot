@@ -30,7 +30,7 @@ var slotConfig_3x5 = {
     useWildInFirstPosition: false,              // substitute of the first symbol not allowed
     useLineBetMultiplier: true,                 // win multiplied by bet
     useLineBetFreeSpinMultiplier: false,        // free spins win multiplied by bet
-    defaultCoins: 100000,                       // default player credit 100 000
+    defaultCoins: 10,                       // default player credit 100 000
 
     localOffsetX: 0,                            // x offset from center for all scene objects
     localOffsetY: 70,                           // y offset from center for all scene objects
@@ -90,6 +90,14 @@ var slotConfig_3x5 = {
             name: 'button_plus_hover'
         },
         {
+            fileName: 'ButtonPlus.png',
+            name: 'money-button_plus'
+        },
+        {
+            fileName: 'ButtonPlusHover.png',
+            name: 'money-button_plus_hover'
+        },
+        {
             fileName: 'ButtonMinus.png',
             name: 'button_minus'
         },
@@ -118,8 +126,12 @@ var slotConfig_3x5 = {
             name: 'panel_balance'
         },
         {
-            fileName: 'gui/PanelBalance.png',
+            fileName: 'gui/LongButton.png',
             name: 'panel-addmoney'
+        },
+        {
+            fileName: 'gui/LongButtonHover.png',
+            name: 'hover-panel-addmoney'
         },
         {
             fileName: null,
@@ -722,6 +734,11 @@ var slotConfig_3x5 = {
             pay: 11,
             freeSpins: 0
         },
+        // {
+        //     line: ['any', 'any', 'any', 'any', 'any'],
+        //     pay: 1,
+        //     freeSpins: 0
+        // },
     ],
 
     
@@ -893,15 +910,15 @@ var slotConfig_3x5 = {
         //add money button
 
 
-        slotControls.addmoneyButton = new SceneButton(scene, 'long-button', 'long-button-hover', true);
-        slotControls.buttons.push(slotControls.addmoneyButton);
-        slotControls.addmoneyButton.create(+1030, 410, 0.5, 0.5)
-        slotControls.addmoneyButton.setDepth(depth);
-        slotControls.addmoneyButton.addClickEvent(() => {
-            console.log('settings click');
-            var pu = scene.guiController.showPopUp(this.createaddmoneyPUHandle);
-            scene.soundController.playClip('button_click');
-        }, this);
+        // slotControls.addmoneyButton = new SceneButton(scene, 'long-button', 'long-button-hover', true);
+        // slotControls.buttons.push(slotControls.addmoneyButton);
+        // slotControls.addmoneyButton.create(+1030, 410, 0.5, 0.5)
+        // slotControls.addmoneyButton.setDepth(depth);
+        // slotControls.addmoneyButton.addClickEvent(() => {
+        //     console.log('settings click');
+        //     var pu = scene.guiController.showPopUp(this.createaddmoneyPUHandle);
+        //     scene.soundController.playClip('button_click');
+        // }, this);
         // slotControls.addmoneyButton.setScale(30 , 30)
 
 
@@ -972,6 +989,8 @@ var slotConfig_3x5 = {
         slotControls.linesPlusButton.addClickEvent(slotControls.linesPlus_Click, slotControls);
         slotControls.linesPlusButton.setDepth(depth);
 
+
+
         // line bet minus button 
         slotControls.lineBetMinusButton = new SceneButton(scene, 'button_minus', 'button_minus_hover', false);
         slotControls.buttons.push(slotControls.lineBetMinusButton);
@@ -985,6 +1004,12 @@ var slotConfig_3x5 = {
         slotControls.lineBetPlusButton.create(-558 + 92, 410, 0.5, 0.5);
         slotControls.lineBetPlusButton.addClickEvent(slotControls.lineBetPlus_Click, slotControls);
         slotControls.lineBetPlusButton.setDepth(depth);
+
+        slotControls.linesPlusButton = new SceneButton(scene, 'money-button_plus', 'money-button_plus_hover', false);
+        slotControls.buttons.push(slotControls.linesPlusButton);
+        slotControls.linesPlusButton.create(510 + 92, 410, 0.5, 0.5);
+        slotControls.linesPlusButton.addClickEvent(slotControls.linesPlus_Click, slotControls);
+        slotControls.linesPlusButton.setDepth(depth);
 
         // adding the text fields
         slotControls.linesText = scene.add.bitmapText(scene.centerX - 815, scene.centerY + 333, 'gameFont_0', 'Lines', 47, 1).setOrigin(0.5);
@@ -1010,11 +1035,11 @@ var slotConfig_3x5 = {
         slotControls.creditText = scene.add.bitmapText(scene.centerX + 520, scene.centerY + 333, 'gameFont_0', 'Balance', 47, 1).setOrigin(0.5);
         slotControls.creditText.depth = depth;
         slotControls.creditText.tint = 0xfcf465;
-        slotControls.creditSumText = scene.add.bitmapText(scene.centerX + 520, scene.centerY + 406, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
+        slotControls.creditSumText = scene.add.bitmapText(scene.centerX + 480, scene.centerY + 406, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
         slotControls.creditSumText.depth = depth;
 
-        slotControls.creditText = scene.add.bitmapText(scene.centerX + 1035, scene.centerY + 410, 'gameFont_1', 'Add Money', 43, 1).setOrigin(0.5);
-        slotControls.creditText.depth = depth;
+        // slotControls.creditText = scene.add.bitmapText(scene.centerX + 1035, scene.centerY + 410, 'gameFont_1', 'Add Money', 43, 1).setOrigin(0.5);
+        // slotControls.creditText.depth = depth;
         // slotControls.creditText.tint = 0xfcf465;
         // slotControls.creditSumText = scene.add.bitmapText(scene.centerX + 558, scene.centerY + 406, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
         // slotControls.creditSumText.depth = depth;
@@ -1391,51 +1416,51 @@ var slotConfig_3x5 = {
         // privacy ant terms buttons text
         popup.privacyText = popup.scene.add.bitmapText(-11, 30 + yOffset, 'gameFont_3', 'PRIVACY POLICY', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
         popup.add(popup.privacyText);
-
+x
         popup.termsText = popup.scene.add.bitmapText(-11, 185 + yOffset, 'gameFont_3', 'TERMS OF USE', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
         popup.add(popup.termsText);
         refreshIcons(popup);
     },
 
-    createaddmoneyPUHandle: function (popup) {
-        let yOffset = -70;
-        // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
-        backGround.setInteractive(); // block bottom controls
-        backGround.tint = 0x1e1c20;
-        popup.add(backGround);
+    // createaddmoneyPUHandle: function (popup) {
+    //     let yOffset = -70;
+    //     // add background and panel
+    //     let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
+    //     backGround.setInteractive(); // block bottom controls
+    //     backGround.tint = 0x1e1c20;
+    //     popup.add(backGround);
 
         
-        let panel = popup.scene.add.sprite(-10, -15 + yOffset, 'message_panel').setOrigin(0.5).setScale(1.6);
-        popup.add(panel);
-        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,200 + yOffset);
-        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -300,30 + yOffset);
-        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,30 + yOffset);
-        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, 280,30 + yOffset);
-        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -300,-130 + yOffset);
-        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,-130 + yOffset);
-        popup.addButton('supportButton', 'long_button', 'long_button_hover', false, 280,-130 + yOffset);
+    //     let panel = popup.scene.add.sprite(-10, -15 + yOffset, 'message_panel').setOrigin(0.5).setScale(1.6);
+    //     popup.add(panel);
+    //     popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,200 + yOffset);
+    //     popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -300,30 + yOffset);
+    //     popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,30 + yOffset);
+    //     popup.addButton('supportButton', 'long_button', 'long_button_hover', false, 280,30 + yOffset);
+    //     popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -300,-130 + yOffset);
+    //     popup.addButton('supportButton', 'long_button', 'long_button_hover', false, -10,-130 + yOffset);
+    //     popup.addButton('supportButton', 'long_button', 'long_button_hover', false, 280,-130 + yOffset);
 
-        popup.addButton('exitButton', 'exit_button', 'exit_button_hover', false, 430, -300 + yOffset);
-        popup['exitButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
-        popup['exitButton'].clickEvent.add(() => { popup.scene.guiController.closePopUp(popup); });
+    //     popup.addButton('exitButton', 'exit_button', 'exit_button_hover', false, 430, -300 + yOffset);
+    //     popup['exitButton'].clickEvent.add(() => { popup.scene.soundController.playClip('button_click', false); }, popup);
+    //     popup['exitButton'].clickEvent.add(() => { popup.scene.guiController.closePopUp(popup); });
 
-        popup.ten = popup.scene.add.bitmapText(-11, 210 + yOffset, 'gameFont_3', '$500', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
-        popup.add(popup.ten);
-        popup.ten = popup.scene.add.bitmapText(-11, 40 + yOffset, 'gameFont_3', '$300', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
-        popup.add(popup.ten);
-        popup.ten = popup.scene.add.bitmapText(-300, 40 + yOffset, 'gameFont_3', '$200', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
-        popup.add(popup.ten);
-        popup.ten = popup.scene.add.bitmapText(280, 40 + yOffset, 'gameFont_3', '$400', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
-        popup.add(popup.ten);
-        popup.ten = popup.scene.add.bitmapText(-300, -120 + yOffset, 'gameFont_3', '$10', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
-        popup.add(popup.ten);
-        popup.ten = popup.scene.add.bitmapText(-11, -120 + yOffset, 'gameFont_3', '$50', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
-        popup.add(popup.ten);
-        popup.ten = popup.scene.add.bitmapText(280, -120 + yOffset, 'gameFont_3', '$100', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
-        popup.add(popup.ten);
+    //     popup.ten = popup.scene.add.bitmapText(-11, 210 + yOffset, 'gameFont_3', '$500', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+    //     popup.add(popup.ten);
+    //     popup.ten = popup.scene.add.bitmapText(-11, 40 + yOffset, 'gameFont_3', '$300', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+    //     popup.add(popup.ten);
+    //     popup.ten = popup.scene.add.bitmapText(-300, 40 + yOffset, 'gameFont_3', '$200', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+    //     popup.add(popup.ten);
+    //     popup.ten = popup.scene.add.bitmapText(280, 40 + yOffset, 'gameFont_3', '$400', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+    //     popup.add(popup.ten);
+    //     popup.ten = popup.scene.add.bitmapText(-300, -120 + yOffset, 'gameFont_3', '$10', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+    //     popup.add(popup.ten);
+    //     popup.ten = popup.scene.add.bitmapText(-11, -120 + yOffset, 'gameFont_3', '$50', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+    //     popup.add(popup.ten);
+    //     popup.ten = popup.scene.add.bitmapText(280, -120 + yOffset, 'gameFont_3', '$100', 60, 1).setOrigin(0.5).setLetterSpacing(0.4);
+    //     popup.add(popup.ten);
 
-    },
+    // }, 
 
     createFreeGamesPUHandler: function (popup) {
         let yOffset = -70;
