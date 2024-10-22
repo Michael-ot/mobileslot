@@ -724,6 +724,7 @@ var slotConfig_3x5 = {
         },
     ],
 
+    
     scatterPayTable: [
         {
             scattersCount: 3,
