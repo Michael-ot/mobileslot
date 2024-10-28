@@ -307,18 +307,28 @@ class Reel{
         shape.beginPath();
         shape.fillRect(this.posX - this.symbolSizeY * 0.6, this.windowPosY + this.symbolSizeY * 0.5,  this.symbolSizeY * 1.2, -this.windowsCount * this.symbolSizeY * 1.0);
         var gMask = shape.createGeometryMask();
+        // var shape = this.symbolSizeY * 0.3;
          /*       */
+
+          // Define the scale factor for the symbols
+        var scaleFactor = .5; // Adjust this value to your needs
         for(var si = 0; si < this.symbOrder.length; si++)
         {
             var symbName = this.symbOrder[si];
             var posY = this.windowPosY - (si * this.symbolSizeY);
             var symbSprite = this.scene.add.image(this.posX, posY, symbName);   
             symbSprite.name = symbName;                         // set name                
-            symbSprite.setMask(gMask);                          // apply mask
+            symbSprite.setMask(gMask);   
+            // Apply scaling to the symbol sprite
+            symbSprite.setScale(scaleFactor);
+
+            // apply mask
             var symbol = new SlotSymbol(this.scene, this, symbSprite, symbName + 'Blurred',  posY, this.animFrameRate);
             this.setIconAndAddAtTop(symbol)
             this.symbols.push(symbol);
+            // this.symbolSpites.setScale(0.2)
             this.symbolSpites.push(symbSprite);
+            // thi
         }
 
         if (this.symbols.length < this.windowsCount)
@@ -1207,6 +1217,22 @@ class PayLine
         return false;
     }
 }
+
+
+// class showWinningVideo {
+//     constructor (pLine){
+//         if (PayLine.pay >= 20) {
+//             this.goldWinVideo.setVisible(true);
+           
+//         } else if (PayLine.pay >= 10) {
+//             this.miniWinVideo.setVisible(true);
+     
+//         } else if (PayLine.pay > 0) {
+//             this.minorWinVideo.setVisible(true);
+//         }
+//     }
+// }
+
 
 class WinData
 {

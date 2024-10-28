@@ -1,6 +1,7 @@
 // 3x5 20 lines, line buttons modern
 var slotConfig_3x5 = {
-    symbolSizeY: 250,
+    symbolSizeY: 180,
+    // symbolSizeX: 100,
     spinTime: 2000,                 // time, milliseconds
     winShowTime: 3000,              // time, milliseconds
     showWinCoinsMessage: false,    // displaying a message with the amount of money won
@@ -30,7 +31,7 @@ var slotConfig_3x5 = {
     useWildInFirstPosition: false,              // substitute of the first symbol not allowed
     useLineBetMultiplier: true,                 // win multiplied by bet
     useLineBetFreeSpinMultiplier: false,        // free spins win multiplied by bet
-    defaultCoins: 10,                       // default player credit 100 000
+    defaultCoins: 1000,                       // default player credit 100 000
 
     localOffsetX: 0,                            // x offset from center for all scene objects
     localOffsetY: 70,                           // y offset from center for all scene objects
@@ -97,6 +98,11 @@ var slotConfig_3x5 = {
             fileName: 'ButtonPlusHover.png',
             name: 'money-button_plus_hover'
         },
+        {
+            fileName: 'part.mp4',
+            name: 'jackpot-panel'
+        },
+
         {
             fileName: 'ButtonMinus.png',
             name: 'button_minus'
@@ -263,15 +269,15 @@ var slotConfig_3x5 = {
             name: 'freespin_panel'
         },
         {
-            fileName: 'gui/BigWinPanel.png',
+            fileName: 'mini pop up.webp',
             name: 'bigwin_panel'
         },
         {
-            fileName: 'gui/HugeWinPanel.png',
+            fileName: 'minor pop up.webp',
             name: 'hugewin_panel'
         },
         {
-            fileName: 'gui/MegaWinPanel.png',
+            fileName: 'gold pop up.webp',
             name: 'megawin_panel'
         },
         {
@@ -363,7 +369,7 @@ var slotConfig_3x5 = {
             name: 'help_title'
         },
         {
-            fileName: 'gui/JackpotWinPanel.png',
+            fileName: 'png/grand pop up.webp',
             name: 'jackpotwin_panel'
         },
         {
@@ -543,16 +549,16 @@ var slotConfig_3x5 = {
     reels: [
         {//0
             symbolImages: ['Heart', 'Nine', 'Jsymb', 'Heart', 'Qsymb', 'Diamond', 'Ten', 'Ksymb', 'Heart', 'Asymb', 'Scatter', 'Diamond'],
-            offsetX: -618,
-            offsetY: -125,
+            offsetX: -458,
+            offsetY: -10,
             windowImage: 'reel',    // not used
             windowsCount: 3,
             addSpinTime: 0, // additional spin time for reel milliseconds   
         },
         {//1
             symbolImages: ['Heart', 'Diamond', 'Heart', 'Qsymb', 'Nine', 'Jsymb', 'Diamond', 'Ksymb', 'Asymb', 'Ten', 'Scatter', 'Diamond', 'Heart', 'Nine', 'Ten', 'Diamond', 'Wild'],
-            offsetX: -309,
-            offsetY: -125,
+            offsetX: -220,
+            offsetY: -10,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 100, // additional spin time for reel milliseconds   
@@ -560,23 +566,23 @@ var slotConfig_3x5 = {
         { // 2
             symbolImages: ['Scatter', 'Heart', 'Ksymb', 'Wild', 'Diamond', 'Bonus', 'Qsymb', 'Bonus', 'Diamond', 'Nine', 'Jsymb', 'Asymb', 'Heart', 'Ten', 'Wild'],
             offsetX: 0,
-            offsetY: -125,
+            offsetY: -10,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 200, // additional spin time for reel milliseconds   
         },
         { // 3
             symbolImages: ['Diamond', 'Bonus', 'Nine', 'Bonus', 'Jsymb', 'Qsymb', 'Heart', 'Wild', 'Diamond', 'Ksymb', 'Asymb', 'Heart', 'Scatter', 'Diamond', 'Heart', 'Ten', 'Wild'],
-            offsetX: 309,
-            offsetY: -125,
+            offsetX: 220,
+            offsetY: -10,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 300, // additional spin time for reel milliseconds     
         },
         { // 4
             symbolImages: ['Diamond', 'Bonus', 'Heart', 'Diamond', 'Wild', 'Nine', 'Jsymb', 'Diamond', 'Qsymb', 'Asymb', 'Wild', 'Scatter', 'Heart', 'Ksymb', 'Ten', 'Wild', 'Bonus'],
-            offsetX: 618,
-            offsetY: -125,
+            offsetX: 458,
+            offsetY: -10,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 400, // additional spin time for reel milliseconds     
@@ -734,11 +740,12 @@ var slotConfig_3x5 = {
             pay: 11,
             freeSpins: 0
         },
-        // {
-        //     line: ['any', 'any', 'any', 'any', 'any'],
-        //     pay: 1,
-        //     freeSpins: 0
-        // },
+        {
+            line: ['any', 'any', 'any', 'any', 'any'],
+            pay: 1,
+            freeSpins: 0
+            
+        },
     ],
 
     
@@ -768,9 +775,11 @@ var slotConfig_3x5 = {
     {
         symbolName: 'Bonus',
         symbolsCount: 6,
-        defaultAmount: 1000,        // coins amout at start
+        defaultAmount: 100,        // coins amout at start
         increaseValue: 1,           // jackpot increment after spin
     },
+
+    
 
     createSlotGraphic: function (scene) {
         // scene.background =  scene.addSpriteLocPos('background', 0, 0); //?.setScale(1.5);
@@ -780,20 +789,23 @@ var slotConfig_3x5 = {
         //scene.debugreference.depth = 2000;
         //scene.debugreference.setAlpha(0.0);
 
-        scene.slot = scene.addSpriteLocPos('slot', 0, -125);
+        scene.slot = scene.addSpriteLocPos('slot', 0, -20);
         scene.slot.depth = -1;
+        scene.slot.setScale(0.75);
 
         scene.bottomPanel = scene.addSpriteLocPos('bottom_panel', 0, 383);
         scene.bottomPanel_1 = scene.addSpriteLocPos('bottom_panel', 1920, 383).setScale(-1, 1);
         scene.bottomPanel_1 = scene.addSpriteLocPos('bottom_panel', -1920, 383).setScale(-1, 1);
-        scene.paneljackpot = scene.addSpriteLocPos('paneljackpot', 0, -552);
-        scene.paneljackpot.setDepth(12);
+        // scene.jackpot = scene.addSpriteLocPos('jackpot-panel', 0, -442);
+        // scene.jackpot.setScale(1.8, 1.25)
+        // scene.jackpot.setDepth(12);
+
     },
 
     createReels: function (scene) {
         var _reels = [];
         for (var ri = 0; ri < this.reels.length; ri++) {
-            _reels.push(new Reel(scene, this.reels[ri], ri, this.symbolSizeY, this.reels[ri].windowsCount, true, this.spinTime, this.symbAnimFrameRate));
+            _reels.push(new Reel(scene, this.reels[ri], ri, this.symbolSizeY,this.reels[ri].windowsCount, true, this.spinTime, this.symbAnimFrameRate));
         }
         return _reels;
     },
@@ -1050,13 +1062,13 @@ var slotConfig_3x5 = {
         slotControls.winAmountText = scene.add.bitmapText(scene.centerX + 780, scene.centerY + 406, 'gameFont_1', '0', 63, 1).setOrigin(0.5);
         slotControls.winAmountText.depth = depth;
 
-        slotControls.jackpotText = scene.add.bitmapText(scene.centerX - 0, scene.centerY - 590, 'gameFont_0', 'Jackpot', 47, 1).setOrigin(0.5);
-        slotControls.jackpotText.setVisible(true);
-        slotControls.jackpotText.depth = depth + 1;
-        slotControls.jackpotText.tint = 0xfcf465;
-        slotControls.jackpotAmountText = scene.add.bitmapText(scene.centerX + 0, scene.centerY - 535, 'gameFont_3', '0', 63, 1).setOrigin(0.5);
-        slotControls.jackpotAmountText.setVisible(true);
-        slotControls.jackpotAmountText.depth = depth + 1;
+        // slotControls.jackpotText = scene.add.bitmapText(scene.centerX - 0, scene.centerY - 590, 'gameFont_0', 'Jackpot', 47, 1).setOrigin(0.5);
+        // slotControls.jackpotText.setVisible(true);
+        // slotControls.jackpotText.depth = depth + 1;
+        // slotControls.jackpotText.tint = 0xfcf465;
+        // slotControls.jackpotAmountText = scene.add.bitmapText(scene.centerX + 0, scene.centerY - 535, 'gameFont_3', '0', 63, 1).setOrigin(0.5);
+        // slotControls.jackpotAmountText.setVisible(true);
+        // slotControls.jackpotAmountText.depth = depth + 1;
 
         slotControls.autoSpinText = scene.add.bitmapText(scene.centerX + 122, scene.centerY + 163 + 220, 'gameFont_2', 'AUTO', 37, 1).setOrigin(0.5);
         slotControls.autoSpinText.setLetterSpacing(-5);
@@ -1124,6 +1136,7 @@ var slotConfig_3x5 = {
             symbContainer.add(symbPanel);
             let symbIcon = popup.scene.add.sprite(-100, 0, symbSpriteName).setOrigin(0.5).setScale(0.8);
             symbContainer.add(symbIcon);
+            // symbIcon.setScale(0.1);
 
             let textXPos = -0;
             let text3x = popup.scene.add.bitmapText(textXPos, 40, 'gameFont_0', '3X', 46, 1).setOrigin(0, 0.5);
@@ -1511,17 +1524,17 @@ x
     createBigWinPUHandler: function (popup) {
         let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000).setDepth(2000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         backGround.setAlpha(0.3);
         popup.add(backGround);
 
-        let panel = popup.scene.add.sprite(0, -5 + yOffset, 'bigwin_panel').setOrigin(0.5); // -110
+        let panel = popup.scene.add.sprite(0, -5 + yOffset, 'bigwin_panel').setOrigin(0.5).setScale(0.6).setDepth(2000); // -110
         popup.add(panel);
 
         // add message
-        popup.messageText = popup.scene.add.bitmapText(0, 110 + yOffset, 'gameFont_3', '0', 84, 1).setOrigin(0.5); // 190
+        popup.messageText = popup.scene.add.bitmapText(0, 110 + yOffset, 'gameFont_3', '0', 84, 1).setOrigin(0.6); // 190
         popup.messageText.setLetterSpacing(1.4);
         popup.add(popup.messageText);
     },
@@ -1547,7 +1560,7 @@ x
     createMegaWinPUHandler: function (popup) {
         let yOffset = -70;
         // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
+        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(500000);
         backGround.setInteractive(); // block bottom controls
         backGround.tint = 0x1e1c20;
         backGround.setAlpha(0.3);
@@ -1557,9 +1570,9 @@ x
         popup.add(panel);
 
         // add message
-        popup.messageText = popup.scene.add.bitmapText(0, 110 + yOffset, 'gameFont_3', '0', 86, 1).setOrigin(0.5); // 190
-        popup.messageText.setLetterSpacing(1.4);
-        popup.add(popup.messageText);
+        // popup.messageText = popup.scene.add.bitmapText(0, 110 + yOffset, 'gameFont_3', '0', 86, 1).setOrigin(0.5); // 190
+        // popup.messageText.setLetterSpacing(1.4);
+        // popup.add(popup.messageText);
     },
 
     createJackpotWinPUHandler: function (popup) {
