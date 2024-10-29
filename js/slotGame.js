@@ -144,6 +144,7 @@ class SlotGame extends Phaser.Scene {
     this.load.audio("win_clip", ["audio/win_coins.wav"]);
     this.load.audio("lose_clip", ["audio/lose.wav"]);
     this.load.audio("background_clip", ["audio/background.wav"]);
+    // this.load.audio("coin_clip", ["audio/Base.mp3"]);
     // this.load.audio('scatter_clip', ['audio/scatter.wav']);
     // this.load.audio('respin_clip', ['audio/respin.wav']);
 
@@ -334,6 +335,7 @@ class SlotGame extends Phaser.Scene {
     this.wincoins_clip = this.sound.add("wincoins_clip");
     this.lose_clip = this.sound.add("lose_clip");
     this.background_clip = this.sound.add("background_clip");
+    // this.coin_clip = this.sound.add("coin_clip")
     // this.scatter_clip = this.sound.add('scatter_clip');
     // this.respin_clip = this.sound.add('respin_clip');
 
@@ -363,6 +365,7 @@ class SlotGame extends Phaser.Scene {
 
     // 9) play background music
     this.soundController.playMusic("background_clip");
+    // this.soundController.playMusic("coin_clip");
 
     // 10) debug
     // this.fpsText = this.add.bitmapText(this.centerX, this.centerY - 560, 'gameFont_2', 'fps: ', 40, 1).setOrigin(0.5);
