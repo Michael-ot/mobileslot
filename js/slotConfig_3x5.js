@@ -622,127 +622,127 @@ var slotConfig_3x5 = {
     payLines: [
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'Diamond'],
-            pay: 3,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'any'],
-            pay: 2,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'any', 'any'],
-            pay: 1,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'Heart', 'Heart'],
-            pay: 5,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'Heart', 'any'],
-            pay: 3,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'any', 'any'],
-            pay: 1,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Nine', 'Nine', 'Nine', 'Nine', 'Nine'],
-            pay: 7,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['Nine', 'Nine', 'Nine', 'Nine', 'any'],
-            pay: 3,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Nine', 'Nine', 'Nine', 'any', 'any'],
-            pay: 2,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'Ten', 'Ten'],
-            pay: 8,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'Ten', 'any'],
-            pay: 3,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'any', 'any'],
-            pay: 2,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'Jsymb', 'Jsymb'],
-            pay: 17,
+            pay: 1000000,
             freeSpins: 0
         },
         {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'Jsymb', 'any'],
-            pay: 13,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'any', 'any'],
-            pay: 11,
+            pay: 1000000,
             freeSpins: 0
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'Qsymb', 'Qsymb'],
-            pay: 19,
+            pay: 1000000,
             freeSpins: 0
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'Qsymb', 'any'],
-            pay: 13,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'any', 'any'],
-            pay: 11,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'Ksymb', 'Ksymb'],
-            pay: 20,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'Ksymb', 'any'],
-            pay: 14,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'any', 'any'],
-            pay: 11,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'Asymb', 'Asymb'],
-            pay: 25,
+            pay: 1000000,
             freeSpins: 0
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'Asymb', 'any'],
-            pay: 15,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'any', 'any'],
-            pay: 11,
+            pay: 100000,
             freeSpins: 0
         },
         {
             line: ['any', 'any', 'any', 'any', 'any'],
-            pay: 1,
+            pay: 10000,
             freeSpins: 0
             
         },

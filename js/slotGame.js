@@ -38,11 +38,15 @@ class SlotGame extends Phaser.Scene {
 
   // method to be executed when the scene preloads
   preload() {
+    this.load.image("loadbg", "game/new/backload.png");
+    // this.load.image('gameBackground', 'png\Background_1.png');
+
     // create preloader
     var progressBar = this.add.graphics();
     var progressBox = this.add.graphics();
     progressBar.depth = 20;
     progressBox.depth = 19;
+    this.add.image(960, 540, "loadbg");
 
     this.load.on("progress", function (value) {
       progressBox.clear();
@@ -72,6 +76,8 @@ class SlotGame extends Phaser.Scene {
       //console.log('complete');
       progressBar.destroy();
       progressBox.destroy();
+
+      // this.add.image(960, 540, 'gameBackground');
     });
 
     this.updateEvent = new MKEvent();
@@ -213,10 +219,6 @@ class SlotGame extends Phaser.Scene {
       );
     });
 
-
-
-
-    
     this.payTableFull = createFullPaytable(this.payTable, this.useWild);
     console.log("paytable full length: " + this.payTableFull.length); // this.payTableFull.forEach((pLine)=>{console.log(pLine);});
     this.scatterPayTable = slotConfig.scatterPayTable;
@@ -238,9 +240,9 @@ class SlotGame extends Phaser.Scene {
     const centerY = 0; // Center of the camera
 
     // Now, after calling createSlotGraphic, instantiate and play the video
-    const video = this.add.video(0, 0, "jackpotvid") // Use the same name as in the config
+    const video = this.add.video(0, 0, "jackpotvid"); // Use the same name as in the config
     video.setOrigin(0);
-    video.setMute(true) // Set the origin if needed
+    video.setMute(true); // Set the origin if needed
     video.play(true); // Play the video
     video.setDisplaySize(1300, 330);
     video.setPosition(centerX, centerY);
@@ -251,7 +253,7 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.30)
+      .setScale(0.3)
       .setPosition(850, 30); // Use the same name as in the config
 
     this.add
@@ -260,7 +262,7 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.30)
+      .setScale(0.3)
       .setPosition(1250, 30);
 
     this.add
@@ -269,19 +271,21 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.30)
+      .setScale(0.3)
       .setPosition(450, 30);
 
-      this.goldWinVideo = this.add.video(0, 0, "goldwin")
+    this.goldWinVideo = this.add
+      .video(0, 0, "goldwin")
       .setDepth(1000)
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.30)
+      .setScale(0.3)
       .setPosition(850, 30)
       .setVisible(false);
 
-  this.miniWinVideo = this.add.video(0, 0, "miniwin")
+    this.miniWinVideo = this.add
+      .video(0, 0, "miniwin")
       .setDepth(1000)
       .setOrigin(0)
       .setMute(true)
@@ -290,7 +294,8 @@ class SlotGame extends Phaser.Scene {
       .setPosition(1250, 30)
       .setVisible(false);
 
-  this.minorWinVideo = this.add.video(0, 0, "minorwin")
+    this.minorWinVideo = this.add
+      .video(0, 0, "minorwin")
       .setDepth(1000)
       .setOrigin(0)
       .setMute(true)
@@ -299,9 +304,6 @@ class SlotGame extends Phaser.Scene {
       .setPosition(450, 30)
       .setVisible(false);
 
-
-
-      
     // 4) main objects
     this.slotPlayer = new SlotPlayer(slotConfig.defaultCoins); // default coins
     this.reels = slotConfig.createReels(this);
@@ -538,7 +540,6 @@ class SlotGame extends Phaser.Scene {
 
     sA.start();
   }
-  
 
   // add sprite relative to scene center
   addSpriteLocPos(name, posX, posY) {
@@ -950,5 +951,3 @@ function float_lerp(val1, val2, amount) {
   amount = amount > 1.0 ? 1.0 : amount;
   return val1 + (val2 - val1) * amount;
 }
-
-
