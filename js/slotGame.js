@@ -39,14 +39,14 @@ class SlotGame extends Phaser.Scene {
   // method to be executed when the scene preloads
   preload() {
     this.load.image("loadbg", "game/new/backload.png");
-    // this.load.image('gameBackground', 'png\Background_1.png');
+    this.load.image('gameBackground', 'png\Background_1.png');
 
     // create preloader
     var progressBar = this.add.graphics();
     var progressBox = this.add.graphics();
     progressBar.depth = 20;
     progressBox.depth = 19;
-    this.add.image(960, 540, "loadbg");
+    // this.add.image(960, 540, "loadbg");
 
     this.load.on("progress", function (value) {
       progressBox.clear();
@@ -76,6 +76,7 @@ class SlotGame extends Phaser.Scene {
       //console.log('complete');
       progressBar.destroy();
       progressBox.destroy();
+      document.body.style.backgroundImage = "url('png/Background_1.png')";
 
       // this.add.image(960, 540, 'gameBackground');
     });
