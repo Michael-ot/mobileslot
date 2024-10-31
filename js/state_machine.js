@@ -51,7 +51,7 @@ class PreSpinState {
 
     if (this.slotControls.getTotalBet() > this.slotPlayer.coins) {
       if (this.slotControls.getTotalBet() > this.slotPlayer.coins) {
-        window.open("https://slotsite.vercel.app/sorry", "_blank"); // Open the site in a new tab
+        window.open("https://slotsite.vercel.app/sorry", "_blank"); // add money link
         this.stateMachine.changeState(this.stateObject.iddleState);
         return;
       }

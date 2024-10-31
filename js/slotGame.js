@@ -126,9 +126,9 @@ class SlotGame extends Phaser.Scene {
       frameHeight: 132,
     });
     this.load.video("jackpotvid", "png/jackpotvid.mp4");
-    this.load.video("gold", "new/gold 1.webm");
-    this.load.video("mini", "new/mini 1.webm");
-    this.load.video("minor", "new/minor 1.webm");
+    this.load.video("gold", "new/gold1org.webm");
+    this.load.video("mini", "new/mini1org.webm");
+    this.load.video("minor", "new/minor1org.webm");
     this.load.video("goldwin", "new/gold 2_.webm");
     this.load.video("miniwin", "new/Mini 2.webm");
     this.load.video("minorwin", "new/minor 2.webm");
@@ -238,7 +238,7 @@ class SlotGame extends Phaser.Scene {
     const centerY = 0; // Center of the camera
 
     // Now, after calling createSlotGraphic, instantiate and play the video
-    const video = this.add.video(0, 0, "jackpotvid").setDepth(1000); // Use the same name as in the config
+    const video = this.add.video(0, 0, "jackpotvid") // Use the same name as in the config
     video.setOrigin(0);
     video.setMute(true) // Set the origin if needed
     video.play(true); // Play the video
@@ -247,29 +247,29 @@ class SlotGame extends Phaser.Scene {
 
     this.add
       .video(0, 0, "gold")
-      .setDepth(1000)
+      // .setDepth(1000)
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.49)
+      .setScale(0.30)
       .setPosition(850, 30); // Use the same name as in the config
 
     this.add
       .video(0, 0, "mini")
-      .setDepth(1000)
+      // .setDepth(1000)
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.45)
+      .setScale(0.30)
       .setPosition(1250, 30);
 
     this.add
       .video(0, 0, "minor")
-      .setDepth(1000)
+      // .setDepth(1000)
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.45)
+      .setScale(0.30)
       .setPosition(450, 30);
 
       this.goldWinVideo = this.add.video(0, 0, "goldwin")
@@ -277,7 +277,7 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.35)
+      .setScale(0.30)
       .setPosition(850, 30)
       .setVisible(false);
 
