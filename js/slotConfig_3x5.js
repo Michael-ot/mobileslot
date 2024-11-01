@@ -207,7 +207,7 @@ var slotConfig_3x5 = {
             name: 'progress_spot'
         },
 
-        // common gui sprites 
+        // common gui sprites e
         {
             fileName: 'ButtonMenu.png',
             name: 'button_menu'
