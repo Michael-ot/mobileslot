@@ -254,8 +254,8 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.3)
-      .setPosition(850, 30); // Use the same name as in the config
+      .setScale(0.4)
+      .setPosition(850, -35); // Use the same name as in the config
 
     this.add
       .video(0, 0, "mini")
@@ -263,8 +263,8 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.3)
-      .setPosition(1250, 30);
+      .setScale(0.4)
+      .setPosition(1250, -35);
 
     this.add
       .video(0, 0, "minor")
@@ -272,8 +272,8 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.3)
-      .setPosition(450, 30);
+      .setScale(0.4)
+      .setPosition(450, -35);
 
     this.goldWinVideo = this.add
       .video(0, 0, "goldwin")
@@ -281,8 +281,8 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.3)
-      .setPosition(850, 30)
+      .setScale(0.4)
+      .setPosition(850, 20)
       .setVisible(false);
 
     this.miniWinVideo = this.add

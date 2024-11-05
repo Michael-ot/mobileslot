@@ -314,7 +314,7 @@ class Reel{
         var scaleFactor = .6; // Adjust this value to your needs
         for(var si = 0; si < this.symbOrder.length; si++)
         {
-            var symbName = this.symbOrder[si];
+            var symbName = this.symbOrder[si]; 
             var posY = this.windowPosY - (si * this.symbolSizeY);
             var symbSprite = this.scene.add.image(this.posX, posY, symbName);   
             symbSprite.name = symbName;                         // set name                

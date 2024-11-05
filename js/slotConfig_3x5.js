@@ -1520,24 +1520,28 @@ x
         popup.messageText.setLetterSpacing(1.4);
         popup.add(popup.messageText);
     },
-
     createBigWinPUHandler: function (popup) {
         let yOffset = -70;
-        // add background and panel
+        
+        // Add background sprite
         let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000).setDepth(2000);
-        backGround.setInteractive(); // block bottom controls
-        backGround.tint = 0x1e1c20;
-        backGround.setAlpha(0.3);
+        backGround.setInteractive(); // Block bottom controls
+        backGround.tint = 0x1e1c20; // Dark grey tint
+        backGround.setAlpha(0.9); // Slight transparency
         popup.add(backGround);
-
+    
+        // Add panel sprite
         let panel = popup.scene.add.sprite(0, -5 + yOffset, 'bigwin_panel').setOrigin(0.5).setScale(0.6).setDepth(2000); // -110
         popup.add(panel);
-
-        // add message
+    
+        // Add message text
         popup.messageText = popup.scene.add.bitmapText(0, 110 + yOffset, 'gameFont_3', '0', 84, 1).setOrigin(0.6); // 190
         popup.messageText.setLetterSpacing(1.4);
         popup.add(popup.messageText);
+
+        popup.messageText.setAlpha(0);
     },
+    
 
     createHugeWinPUHandler: function (popup) {
         let yOffset = -70;
@@ -1552,9 +1556,9 @@ x
         popup.add(panel);
 
         // add message
-        popup.messageText = popup.scene.add.bitmapText(0, 110 + yOffset, 'gameFont_3', '0', 86, 1).setOrigin(0.5); // 190
-        popup.messageText.setLetterSpacing(1.4);
-        popup.add(popup.messageText);
+        // popup.messageText = popup.scene.add.bitmapText(0, 110 + yOffset, 'gameFont_3', '0', 86, 1).setOrigin(0.5); // 190
+        // popup.messageText.setLetterSpacing(1.4);
+        // popup.add(popup.messageText);
     },
 
     createMegaWinPUHandler: function (popup) {
@@ -1577,21 +1581,29 @@ x
 
     createJackpotWinPUHandler: function (popup) {
         let yOffset = -70;
-        // add background and panel
-        let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
-        backGround.setInteractive(); // block bottom controls
-        backGround.tint = 0x1e1c20;
-        backGround.setAlpha(0.3);
-        popup.add(backGround);
-
-        let panel = popup.scene.add.sprite(0, -5 + yOffset, 'jackpotwin_panel').setOrigin(0.5); // -110
-        popup.add(panel);
-
-        // add message
+    
+        // Create transparent grey background that covers the entire page
+        // let greyBackground = popup.scene.add.graphics();
+        // greyBackground.fillStyle(0x1e1c20, 0.5); // Grey color with 50% opacity
+        // greyBackground.fillRect(0, 0, popup.scene.sys.game.config.width, popup.scene.sys.game.config.height); // Full screen size
+        // popup.add(greyBackground);
+    
+        // // Add background and panel
+        // let backGround = popup.scene.add.sprite(-10, 0 + yOffset, 'white_bkg').setOrigin(0.5).setScale(2000);
+        // backGround.setInteractive(); // block bottom controls
+        // backGround.tint = 0x1e1c20;
+        // backGround.setAlpha(0.3);
+        // popup.add(backGround);
+    
+        // let panel = popup.scene.add.sprite(0, -5 + yOffset, 'jackpotwin_panel').setOrigin(0.5); // -110
+        // popup.add(panel);
+    
+        // Add message
         popup.messageText = popup.scene.add.bitmapText(0, 123 + yOffset, 'gameFont_3', '0', 86, 1).setOrigin(0.5); // 190
         // popup.messageText.setLetterSpacing(1.4);
         popup.add(popup.messageText);
     },
+    
 
     // just for blocking controls
     createEmptyPUHandler: function (popup) {
