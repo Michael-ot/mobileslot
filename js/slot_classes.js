@@ -311,7 +311,7 @@ class Reel{
          /*       */
 
           // Define the scale factor for the symbols
-        var scaleFactor = .6; // Adjust this value to your needs
+        var scaleFactor = 0.95; // Adjust this value to your needs
         for(var si = 0; si < this.symbOrder.length; si++)
         {
             var symbName = this.symbOrder[si]; 

@@ -1,6 +1,6 @@
 // 3x5 20 lines, line buttons modern
 var slotConfig_3x5 = {
-    symbolSizeY: 180,
+    symbolSizeY: 260,
     // symbolSizeX: 100,
     spinTime: 2000,                 // time, milliseconds
     winShowTime: 3000,              // time, milliseconds
@@ -549,16 +549,16 @@ var slotConfig_3x5 = {
     reels: [
         {//0
             symbolImages: ['Heart', 'Nine', 'Jsymb', 'Heart', 'Qsymb', 'Diamond', 'Ten', 'Ksymb', 'Heart', 'Asymb', 'Scatter', 'Diamond'],
-            offsetX: -458,
-            offsetY: -10,
+            offsetX: -650,
+            offsetY: -245,
             windowImage: 'reel',    // not used
             windowsCount: 3,
             addSpinTime: 0, // additional spin time for reel milliseconds   
         },
         {//1
             symbolImages: ['Heart', 'Diamond', 'Heart', 'Qsymb', 'Nine', 'Jsymb', 'Diamond', 'Ksymb', 'Asymb', 'Ten', 'Scatter', 'Diamond', 'Heart', 'Nine', 'Ten', 'Diamond', 'Wild'],
-            offsetX: -220,
-            offsetY: -10,
+            offsetX: -310,
+            offsetY: -245,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 100, // additional spin time for reel milliseconds   
@@ -566,23 +566,23 @@ var slotConfig_3x5 = {
         { // 2
             symbolImages: ['Scatter', 'Heart', 'Ksymb', 'Wild', 'Diamond', 'Bonus', 'Qsymb', 'Bonus', 'Diamond', 'Nine', 'Jsymb', 'Asymb', 'Heart', 'Ten', 'Wild'],
             offsetX: 0,
-            offsetY: -10,
+            offsetY: -245,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 200, // additional spin time for reel milliseconds   
         },
         { // 3
             symbolImages: ['Diamond', 'Bonus', 'Nine', 'Bonus', 'Jsymb', 'Qsymb', 'Heart', 'Wild', 'Diamond', 'Ksymb', 'Asymb', 'Heart', 'Scatter', 'Diamond', 'Heart', 'Ten', 'Wild'],
-            offsetX: 220,
-            offsetY: -10,
+            offsetX: 310,
+            offsetY: -245,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 300, // additional spin time for reel milliseconds     
         },
         { // 4
             symbolImages: ['Diamond', 'Bonus', 'Heart', 'Diamond', 'Wild', 'Nine', 'Jsymb', 'Diamond', 'Qsymb', 'Asymb', 'Wild', 'Scatter', 'Heart', 'Ksymb', 'Ten', 'Wild', 'Bonus'],
-            offsetX: 458,
-            offsetY: -10,
+            offsetX: 650,
+            offsetY: -245,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 400, // additional spin time for reel milliseconds     
@@ -789,9 +789,9 @@ var slotConfig_3x5 = {
         //scene.debugreference.depth = 2000;
         //scene.debugreference.setAlpha(0.0);
 
-        scene.slot = scene.addSpriteLocPos('slot', 0, -20);
+        scene.slot = scene.addSpriteLocPos('slot', 0, -260);
         scene.slot.depth = -1;
-        scene.slot.setScale(0.75);
+        scene.slot.setScale(1.05);
 
         scene.bottomPanel = scene.addSpriteLocPos('bottom_panel', 0, 383);
         scene.bottomPanel_1 = scene.addSpriteLocPos('bottom_panel', 1920, 383).setScale(-1, 1);
@@ -894,7 +894,7 @@ var slotConfig_3x5 = {
         // menu button
         slotControls.menuButton = new SceneButton(scene, 'button_menu', 'button_menu_hover', true);
         slotControls.buttons.push(slotControls.menuButton);
-        slotControls.menuButton.create(-905, -550, 0.5, 0.5);
+        slotControls.menuButton.create(-905, -1400, 0.5, 0.5);
         slotControls.menuButton.addClickEvent(() => {
             console.log('menu click');
             slotControls.settingsButton.button.setVisible(!slotControls.settingsButton.button.visible);
@@ -909,7 +909,7 @@ var slotConfig_3x5 = {
         // settings button
         slotControls.settingsButton = new SceneButton(scene, 'button_settings', 'button_settings_hover', false);
         slotControls.buttons.push(slotControls.settingsButton);
-        slotControls.settingsButton.create(-905 + 1 * 115, -550, 0.5, 0.5);
+        slotControls.settingsButton.create(-905 + 1 * 115, -800, 0.5, 0.5);
         slotControls.settingsButton.addClickEvent(() => {
             console.log('settings click');
             var pu = scene.guiController.showPopUp(this.createSettingsPUHandler);
@@ -938,7 +938,7 @@ var slotConfig_3x5 = {
         // rules button
         slotControls.rulesButton = new SceneButton(scene, 'button_rules', 'button_rules_hover', false);
         slotControls.buttons.push(slotControls.rulesButton);
-        slotControls.rulesButton.create(-905 + 2 * 115, -550, 0.5, 0.5);
+        slotControls.rulesButton.create(-905 + 2 * 115, -800, 0.5, 0.5);
         slotControls.rulesButton.addClickEvent(() => {
             var pu = scene.guiController.showPopUp(this.createInfoPUHandler);
             scene.soundController.playClip('button_click');
@@ -949,7 +949,7 @@ var slotConfig_3x5 = {
         // info button
         slotControls.slotInfoButton = new SceneButton(scene, 'button_info', 'button_info_hover', false);
         slotControls.buttons.push(slotControls.slotInfoButton);
-        slotControls.slotInfoButton.create(-905 + 3 * 115, -550, 0.5, 0.5);
+        slotControls.slotInfoButton.create(-905 + 3 * 115, -800, 0.5, 0.5);
         slotControls.slotInfoButton.addClickEvent(() => {
             console.log('info click');
             var pu = scene.guiController.showPopUp(this.createAboutPUHandler);
@@ -1340,7 +1340,7 @@ var slotConfig_3x5 = {
 
         let panel = popup.scene.add.sprite(-10, -52 + yOffset, 'about_panel').setOrigin(0.5);
         popup.add(panel);
-
+                                                                                                                                                                                                                                                                                              
         // add title
         // popup.title = popup.scene.add.bitmapText(0, -145 + yOffset, 'gameFont_1', 'About', 80, 1).setOrigin(0.5);
         // popup.add(popup.title);
