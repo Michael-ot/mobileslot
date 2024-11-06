@@ -909,7 +909,7 @@ var slotConfig_3x5 = {
         // settings button
         slotControls.settingsButton = new SceneButton(scene, 'button_settings', 'button_settings_hover', false);
         slotControls.buttons.push(slotControls.settingsButton);
-        slotControls.settingsButton.create(-905 + 1 * 115, -800, 0.5, 0.5);
+        slotControls.settingsButton.create(-905 + 1 * 115, -1400, 0.5, 0.5);
         slotControls.settingsButton.addClickEvent(() => {
             console.log('settings click');
             var pu = scene.guiController.showPopUp(this.createSettingsPUHandler);
@@ -938,7 +938,7 @@ var slotConfig_3x5 = {
         // rules button
         slotControls.rulesButton = new SceneButton(scene, 'button_rules', 'button_rules_hover', false);
         slotControls.buttons.push(slotControls.rulesButton);
-        slotControls.rulesButton.create(-905 + 2 * 115, -800, 0.5, 0.5);
+        slotControls.rulesButton.create(-905 + 2 * 115, -1400, 0.5, 0.5);
         slotControls.rulesButton.addClickEvent(() => {
             var pu = scene.guiController.showPopUp(this.createInfoPUHandler);
             scene.soundController.playClip('button_click');
@@ -949,7 +949,7 @@ var slotConfig_3x5 = {
         // info button
         slotControls.slotInfoButton = new SceneButton(scene, 'button_info', 'button_info_hover', false);
         slotControls.buttons.push(slotControls.slotInfoButton);
-        slotControls.slotInfoButton.create(-905 + 3 * 115, -800, 0.5, 0.5);
+        slotControls.slotInfoButton.create(-905 + 3 * 115, -1400, 0.5, 0.5);
         slotControls.slotInfoButton.addClickEvent(() => {
             console.log('info click');
             var pu = scene.guiController.showPopUp(this.createAboutPUHandler);
