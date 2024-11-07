@@ -269,7 +269,7 @@ var slotConfig_3x5 = {
             name: 'freespin_panel'
         },
         {
-            fileName: 'mini pop up.png',
+            fileName: 'grand pop up.webp',
             name: 'bigwin_panel'
         },
         {
