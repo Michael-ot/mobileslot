@@ -622,32 +622,32 @@ var slotConfig_3x5 = {
     payLines: [
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'Diamond'],
-            pay: 10000,
+            pay: 5000,
             freeSpins: 0
         },
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'any'],
-            pay: 10000,
+            pay: 5000,
             freeSpins: 0
         },
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'any', 'any'],
-            pay: 10000,
+            pay: 5000,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'Heart', 'Heart'],
-            pay: 10000,
+            pay: 5000,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'Heart', 'any'],
-            pay: 10000,
+            pay: 5000,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'any', 'any'],
-            pay: 10000,
+            pay: 5000,
             freeSpins: 0
         },
         {
@@ -657,7 +657,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Nine', 'Nine', 'Nine', 'Nine', 'any'],
-            pay: 10000,
+            pay: 5000,
             freeSpins: 0
         },
         {

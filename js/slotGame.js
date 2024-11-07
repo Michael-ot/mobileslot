@@ -76,7 +76,7 @@ class SlotGame extends Phaser.Scene {
       //console.log('complete');
       progressBar.destroy();
       progressBox.destroy();
-      document.body.style.backgroundImage = "url('png/Background_1.png')";
+      // document.body.style.backgroundImage = "url('png/Background_1.png')";
 
       // this.add.image(960, 540, 'gameBackground');
     });
