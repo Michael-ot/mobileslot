@@ -250,7 +250,7 @@ class SlotGame extends Phaser.Scene {
 
     this.add
       .video(0, 0, "gold")
-      .setDepth(1000)
+      .setDepth(2000)
       .setOrigin(0)
       .setMute(true)
       .play(true)
