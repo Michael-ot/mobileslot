@@ -6,8 +6,8 @@ var slotConfig_3x5 = {
     winShowTime: 3000,              // time, milliseconds
     showWinCoinsMessage: false,    // displaying a message with the amount of money won
     winMessageTime: 2400,           // win message show time
-    minWin: 200,                      // to show big, mega, huge popup
-    useBigWinCongratulation: true,    // to show big, mega, huge popup
+    minWin: 90000000000,                      // to show big, mega, huge popup
+    useBigWinCongratulation: false,    // to show big, mega, huge popup
     showWinFreeSpinsMessage: true,    // show free spin message
     showFreeGameMessage: true,
 
@@ -18,7 +18,7 @@ var slotConfig_3x5 = {
     playSpinSound: false,
 
     lineColor: 0xFFEA31,       // line color
-    showWinLines: true,
+    showWinLines: false,
 
     lineBetMaxValue: 20,        // slot line bet maxvalue
     useWild: true,              // use wild flag, wild can be substitute for any symbol
@@ -277,7 +277,7 @@ var slotConfig_3x5 = {
             name: 'hugewin_panel'
         },
         {
-            fileName: 'gold pop up.webp',
+            fileName: 'gold pop up.w,. llebp',
             name: 'megawin_panel'
         },
         {
@@ -351,6 +351,18 @@ var slotConfig_3x5 = {
         {
             fileName: 'gui/ExtraLongButtonHover.png',
             name: 'extralong_button_hover'
+        },
+        {
+            fileName: '10000.png',
+            name: '10k'
+        },
+        {
+            fileName: '100000.png',
+            name: '11k'
+        },
+        {
+            fileName: '1000000.png',
+            name: '12k'
         },
         {
             fileName: 'gui/SmallButton.png',
@@ -853,6 +865,9 @@ var slotConfig_3x5 = {
         slotControls.balancePanel.setDepth(depth);
         slotControls.winPanel = scene.addSpriteLocPos('panel_win', 0, 340);
         slotControls.winPanel.setDepth(depth);
+        slotControls.money = scene.addSpriteLocPos('10k', 410, -1400).setScale(0.4);
+        slotControls.money = scene.addSpriteLocPos('12k', 40 , -1400).setScale(0.4);
+        slotControls.money = scene.addSpriteLocPos('11k', -410, -1400).setScale(0.4);
 
 
         // slotControls.addmoneyPanel.addClickEvent(() => {
