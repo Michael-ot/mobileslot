@@ -31,7 +31,7 @@ var slotConfig_3x5 = {
     useWildInFirstPosition: false,              // substitute of the first symbol not allowed
     useLineBetMultiplier: true,                 // win multiplied by bet
     useLineBetFreeSpinMultiplier: false,        // free spins win multiplied by bet
-    defaultCoins: 10000,                       // default player credit 100 000
+    defaultCoins: 100,                       // default player credit 100 000
 
     localOffsetX: 0,                            // x offset from center for all scene objects
     localOffsetY: 70,                           // y offset from center for all scene objects
@@ -634,32 +634,32 @@ var slotConfig_3x5 = {
     payLines: [
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'Diamond'],
-            pay: 5000,
+            pay: 10,
             freeSpins: 0
         },
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'any'],
-            pay: 5000,
+            pay: 50,
             freeSpins: 0
         },
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'any', 'any'],
-            pay: 5000,
+            pay: 40,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'Heart', 'Heart'],
-            pay: 5000,
+            pay: 10,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'Heart', 'any'],
-            pay: 5000,
+            pay: 20,
             freeSpins: 0
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'any', 'any'],
-            pay: 5000,
+            pay: 50,
             freeSpins: 0
         },
         {
@@ -669,42 +669,42 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Nine', 'Nine', 'Nine', 'Nine', 'any'],
-            pay: 5000,
+            pay: 60,
             freeSpins: 0
         },
         {
             line: ['Nine', 'Nine', 'Nine', 'any', 'any'],
-            pay: 10000,
+            pay: 5,
             freeSpins: 0
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'Ten', 'Ten'],
-            pay: 100000,
+            pay: 10000,
             freeSpins: 0
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'Ten', 'any'],
-            pay: 10000,
+            pay: 50,
             freeSpins: 0
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'any', 'any'],
-            pay: 10000,
+            pay: 50,
             freeSpins: 0
         },
         {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'Jsymb', 'Jsymb'],
-            pay: 1000000,
-            freeSpins: 0
-        },
-        {
-            line: ['Jsymb', 'Jsymb', 'Jsymb', 'Jsymb', 'any'],
             pay: 100000,
             freeSpins: 0
         },
         {
+            line: ['Jsymb', 'Jsymb', 'Jsymb', 'Jsymb', 'any'],
+            pay: 100,
+            freeSpins: 0
+        },
+        {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'any', 'any'],
-            pay: 1000000,
+            pay: 90,
             freeSpins: 0
         },
         {
@@ -714,47 +714,47 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'Qsymb', 'any'],
-            pay: 100000,
+            pay: 75,
             freeSpins: 0
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'any', 'any'],
-            pay: 100000,
+            pay: 89,
             freeSpins: 0
         },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'Ksymb', 'Ksymb'],
-            pay: 100000,
+            pay: 500,
             freeSpins: 0
         },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'Ksymb', 'any'],
-            pay: 100000,
+            pay: 30,
             freeSpins: 0
         },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'any', 'any'],
-            pay: 100000,
+            pay: 20,
             freeSpins: 0
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'Asymb', 'Asymb'],
-            pay: 1000000,
+            pay: 500,
             freeSpins: 0
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'Asymb', 'any'],
-            pay: 10000,
+            pay: 100,
             freeSpins: 0
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'any', 'any'],
-            pay: 100000,
+            pay: 65,
             freeSpins: 0
         },
         {
             line: ['any', 'any', 'any', 'any', 'any'],
-            pay: 10000,
+            pay: 100,
             freeSpins: 0
             
         },
