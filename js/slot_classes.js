@@ -402,7 +402,23 @@ class Reel{
 
         sA.start();
         this.startSpinEvent.invoke();
+        this.saveSpin();
     }
+
+    saveSpin ()
+    {
+        console.log("Save spin")
+            let userData = localStorage.getItem("user");
+            let token = localStorage.getItem("token");
+            console.log(token)
+            if(!(userData === "null" || userData === null || userData === "")){
+                 axios.post("https://onehubplay.com:8000/api/slot-machine/track-spin",{},{ headers: { Authorization: `Bearer ${token}` } }).then(function (response) {
+                    console.log(response)
+                    // do whatever you want if console is [object object] then stringify the response
+                })
+            }
+    }
+
 
     symbolsMove(posY, dPos)
     {
@@ -1546,6 +1562,12 @@ class SlotControls
     {
         this.addSelectedLinesCount(1, true);
         this.scene.soundController.playClip('button_click');
+    }
+
+    add_money_clicked()
+    {
+        // window.open("https://slotmachine.onehubplay.com/sorry","_self");
+        window.parent.postMessage({action:'openPaymentTab',url:"https://slotmachine.onehubplay.com/sorry"},'*')
     }
 
     linesMinus_Click()

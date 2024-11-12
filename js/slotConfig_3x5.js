@@ -1035,7 +1035,7 @@ var slotConfig_3x5 = {
         slotControls.linesPlusButton = new SceneButton(scene, 'money-button_plus', 'money-button_plus_hover', false);
         slotControls.buttons.push(slotControls.linesPlusButton);
         slotControls.linesPlusButton.create(0 + 92, 837, 0.5, 0.5);
-        slotControls.linesPlusButton.addClickEvent(slotControls.linesPlus_Click, slotControls);
+        slotControls.linesPlusButton.addClickEvent(slotControls.add_money_clicked, slotControls);
         slotControls.linesPlusButton.setDepth(depth);
 
         // adding the text fields

@@ -51,7 +51,7 @@ class PreSpinState {
 
     if (this.slotControls.getTotalBet() > this.slotPlayer.coins) {
       if (this.slotControls.getTotalBet() > this.slotPlayer.coins) {
-        window.open("https://slotsite.vercel.app/sorry", "_blank"); // add money link
+        window.parent.postMessage({action:'openPaymentTab',url:"https://slotmachine.onehubplay.com/sorry"},'*') // add money link
         this.stateMachine.changeState(this.stateObject.iddleState);
         return;
       }
