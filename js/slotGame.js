@@ -901,6 +901,25 @@ function getSymboldData(_slotConfig, spriteName) {
   return null;
 }
 
+function getToken(){
+  const params = new URLSearchParams(window.location.search);
+  return params.get("token");
+}
+
+function saveSpin ()
+{
+  console.log("Save spin")
+      let token = getToken();
+      console.log(token)
+      if(!(token === "null" || token === null || token === "")){
+           axios.post("https://onehubplay.com:8000/api/slot-machine/track-spin",{},{ headers: { Authorization: `Bearer ${token}` } }).then(function (response) {
+              console.log(response)
+              // do whatever you want if console is [object object] then stringify the response
+          })
+      }
+}
+
+
 function spinReels(scene, reels, _slotConfig, completeCallback) {
   var pA = new ParallelActions();
   var ri = 0;
@@ -908,7 +927,7 @@ function spinReels(scene, reels, _slotConfig, completeCallback) {
     scene.slotControls.hold != null
       ? scene.slotControls.hold.holdReels
       : [false, false, false, false, false];
-
+      saveSpin();
   reels.forEach((r) => {
     pA.add((callBack) => {
       var rand =
