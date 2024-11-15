@@ -561,16 +561,16 @@ var slotConfig_3x5 = {
     reels: [
         {//0
             symbolImages: ['Heart', 'Nine', 'Jsymb', 'Heart', 'Qsymb', 'Diamond', 'Ten', 'Ksymb', 'Heart', 'Asymb', 'Scatter', 'Diamond'],
-            offsetX: -650,
-            offsetY: -245,
+            offsetX: -680,
+            offsetY: -255,
             windowImage: 'reel',    // not used
             windowsCount: 3,
             addSpinTime: 0, // additional spin time for reel milliseconds   
         },
         {//1
             symbolImages: ['Heart', 'Diamond', 'Heart', 'Qsymb', 'Nine', 'Jsymb', 'Diamond', 'Ksymb', 'Asymb', 'Ten', 'Scatter', 'Diamond', 'Heart', 'Nine', 'Ten', 'Diamond', 'Wild'],
-            offsetX: -310,
-            offsetY: -245,
+            offsetX: -330,
+            offsetY: -255,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 100, // additional spin time for reel milliseconds   
@@ -578,7 +578,7 @@ var slotConfig_3x5 = {
         { // 2
             symbolImages: ['Scatter', 'Heart', 'Ksymb', 'Wild', 'Diamond', 'Bonus', 'Qsymb', 'Bonus', 'Diamond', 'Nine', 'Jsymb', 'Asymb', 'Heart', 'Ten', 'Wild'],
             offsetX: 0,
-            offsetY: -245,
+            offsetY: -255,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 200, // additional spin time for reel milliseconds   
@@ -586,15 +586,15 @@ var slotConfig_3x5 = {
         { // 3
             symbolImages: ['Diamond', 'Bonus', 'Nine', 'Bonus', 'Jsymb', 'Qsymb', 'Heart', 'Wild', 'Diamond', 'Ksymb', 'Asymb', 'Heart', 'Scatter', 'Diamond', 'Heart', 'Ten', 'Wild'],
             offsetX: 310,
-            offsetY: -245,
+            offsetY: -255,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 300, // additional spin time for reel milliseconds     
         },
         { // 4
             symbolImages: ['Diamond', 'Bonus', 'Heart', 'Diamond', 'Wild', 'Nine', 'Jsymb', 'Diamond', 'Qsymb', 'Asymb', 'Wild', 'Scatter', 'Heart', 'Ksymb', 'Ten', 'Wild', 'Bonus'],
-            offsetX: 650,
-            offsetY: -245,
+            offsetX: 660,
+            offsetY: -255,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 400, // additional spin time for reel milliseconds     
