@@ -122,9 +122,6 @@ class LineButton
         this.lineText = this.scene.add.bitmapText(this.posX, this.posY, textFont, this.number, fontSize, 1).setOrigin(0.5);
     }
 
-
-
-
     pointerUp() 
     {
         if(!this.interactable) return;

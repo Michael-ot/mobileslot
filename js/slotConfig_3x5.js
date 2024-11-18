@@ -689,7 +689,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'any', 'any'],
-            pay: 50,
+            pay: 26,
             freeSpins: 0
         },
         {
@@ -704,7 +704,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'any', 'any'],
-            pay: 90,
+            pay: 20,
             freeSpins: 0
         },
         {
@@ -719,7 +719,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'any', 'any'],
-            pay: 89,
+            pay: 30,
             freeSpins: 0
         },
         {
@@ -744,17 +744,17 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'Asymb', 'any'],
-            pay: 100,
+            pay: 60,
             freeSpins: 0
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'any', 'any'],
-            pay: 65,
+            pay: 30,
             freeSpins: 0
         },
         {
             line: ['any', 'any', 'any', 'any', 'any'],
-            pay: 100,
+            pay: 0,
             freeSpins: 0
             
         },
