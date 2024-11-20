@@ -122,6 +122,9 @@ class LineButton
         this.lineText = this.scene.add.bitmapText(this.posX, this.posY, textFont, this.number, fontSize, 1).setOrigin(0.5);
     }
 
+
+
+
     pointerUp() 
     {
         if(!this.interactable) return;
@@ -308,7 +311,7 @@ class Reel{
          /*       */
 
           // Define the scale factor for the symbols
-        var scaleFactor = 0.95; // Adjust this value to your needs
+        var scaleFactor = .6; // Adjust this value to your needs
         for(var si = 0; si < this.symbOrder.length; si++)
         {
             var symbName = this.symbOrder[si]; 
@@ -359,6 +362,7 @@ class Reel{
 
     spin(nextOrderPosition, completeCallBack)   // spin down
     {
+        // console.log('Calling spin()...');
        // var nextOrderPosition = this.getRandomOrderPosition();
         var spinTime = this.spinTime + this.reelData.addSpinTime;
         if(!this.canSpin) return;
@@ -396,26 +400,12 @@ class Reel{
             completeCallBack(); 
             callBack();
         }, this);
-
         sA.start();
         this.startSpinEvent.invoke();
-        this.saveSpin();
+      
     }
 
-    saveSpin ()
-    {
-        console.log("Save spin")
-            let userData = localStorage.getItem("user");
-            let token = localStorage.getItem("token");
-            console.log(token)
-            if(!(userData === "null" || userData === null || userData === "")){
-                 axios.post("https://onehubplay.com:8000/api/slot-machine/track-spin",{},{ headers: { Authorization: `Bearer ${token}` } }).then(function (response) {
-                    console.log(response)
-                    // do whatever you want if console is [object object] then stringify the response
-                })
-            }
-    }
-
+    
 
     symbolsMove(posY, dPos)
     {
@@ -1290,7 +1280,11 @@ class SlotPlayer{
 
     addCoins(count)
     {
+        let balance = this.coins + count
+        console.log("game Coins ",this.coins + count);
         this.setCoinsCount(this.coins + count);
+        window.setBalance(balance)
+
     }
 
     setCoinsCount(count)
@@ -1696,6 +1690,7 @@ class SlotControls
         if (this.slotPlayer.hasMoneyForBet(this.getTotalBet()))
         {
             this.slotPlayer.addCoins(-this.getTotalBet());
+            // console.log("game deducted" + this.getTotalBet());
             return true;
         }
         else

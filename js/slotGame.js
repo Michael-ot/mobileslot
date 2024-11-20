@@ -4,7 +4,7 @@ let slotConfig;
 let coinSpinAnim;
 
 // window loads event
-window.onload = function () {
+window.onload = function async() {
   // phaser game configuration object
   var gameConfig = {
     type: Phaser.WEBGL, // render type
@@ -21,6 +21,7 @@ window.onload = function () {
   };
 
   slotGame = new Phaser.Game(gameConfig); // game constructor
+  window.getWallet();
   window.focus(); // pure javascript to give focus to the page/frame
   // scale  resize();  window.addEventListener("resize", resize, false); - not used
 };
@@ -306,7 +307,7 @@ class SlotGame extends Phaser.Scene {
       .setVisible(false);
 
     // 4) main objects
-    this.slotPlayer = new SlotPlayer(slotConfig.defaultCoins); // default coins
+    this.slotPlayer = new SlotPlayer(window.balance); // default coins
     this.reels = slotConfig.createReels(this);
     this.lineButtons = slotConfig.createLineButtons
       ? slotConfig.createLineButtons(this)
@@ -725,6 +726,7 @@ class SlotGame extends Phaser.Scene {
 
     // start free games events, perhaps a message or minigame
     if (this.startFreeGames) {
+      window.hasFreeSpin = true;
       // var fgPU = this.guiController.showMessage("START FREE GAME", winSpins, this, () => { this.guiController.closePopUp(fgPU);});
       if (slotConfig.showFreeGameMessage) {
         var fgPU = this.guiController.showPopUp(
@@ -733,7 +735,10 @@ class SlotGame extends Phaser.Scene {
         fgPU.messageText.text = winSpins;
       }
       this.startFreeGamesEvent.invoke();
+    }else{
+      window.hasFreeSpin = false;
     }
+    
 
     while (this.miniGame !== null || !this.guiController.hasNoPopUp()) {
       yield null;
@@ -904,6 +909,11 @@ function getSymboldData(_slotConfig, spriteName) {
 function getToken(){
   const params = new URLSearchParams(window.location.search);
   return params.get("token");
+}
+
+function getUserId(){
+  const params = new URLSearchParams(window.location.search);
+  return params.get("uid");
 }
 
 function saveSpin ()

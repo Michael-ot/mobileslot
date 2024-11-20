@@ -31,7 +31,7 @@ var slotConfig_3x5 = {
     useWildInFirstPosition: false,              // substitute of the first symbol not allowed
     useLineBetMultiplier: true,                 // win multiplied by bet
     useLineBetFreeSpinMultiplier: false,        // free spins win multiplied by bet
-    defaultCoins: 100,                       // default player credit 100 000
+    defaultCoins: window.balance,                       // default player credit 100 000
 
     localOffsetX: 0,                            // x offset from center for all scene objects
     localOffsetY: 70,                           // y offset from center for all scene objects
@@ -637,6 +637,7 @@ var slotConfig_3x5 = {
             pay: 10,
             freeSpins: 0
         },
+      
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'any'],
             pay: 50,
@@ -664,7 +665,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Nine', 'Nine', 'Nine', 'Nine', 'Nine'],
-            pay: 100000,
+            pay: 10,
             freeSpins: 0
         },
         {
@@ -679,7 +680,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'Ten', 'Ten'],
-            pay: 10000,
+            pay: 10,
             freeSpins: 0
         },
         {
@@ -694,7 +695,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'Jsymb', 'Jsymb'],
-            pay: 100000,
+            pay: 100,
             freeSpins: 0
         },
         {
@@ -709,7 +710,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'Qsymb', 'Qsymb'],
-            pay: 1000000,
+            pay: 100,
             freeSpins: 0
         },
         {
@@ -724,7 +725,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'Ksymb', 'Ksymb'],
-            pay: 500,
+            pay: 70,
             freeSpins: 0
         },
         {
@@ -739,7 +740,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'Asymb', 'Asymb'],
-            pay: 500,
+            pay: 70,
             freeSpins: 0
         },
         {
@@ -751,13 +752,7 @@ var slotConfig_3x5 = {
             line: ['Asymb', 'Asymb', 'Asymb', 'any', 'any'],
             pay: 30,
             freeSpins: 0
-        },
-        {
-            line: ['any', 'any', 'any', 'any', 'any'],
-            pay: 0,
-            freeSpins: 0
-            
-        },
+        }
     ],
 
     
@@ -791,6 +786,11 @@ var slotConfig_3x5 = {
         increaseValue: 1,           // jackpot increment after spin
     },
 
+    getBalance: function (){
+        let resp = JSON.parse(localStorage.getItem(gameWallet)? localStorage.getItem(gameWallet): "{balance:0}");
+        console.log(resp)
+        return resp?.balance;
+    },
     
 
     createSlotGraphic: function (scene) {

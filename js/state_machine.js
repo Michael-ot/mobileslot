@@ -50,10 +50,14 @@ class PreSpinState {
     }
 
     if (this.slotControls.getTotalBet() > this.slotPlayer.coins) {
-      if (this.slotControls.getTotalBet() > this.slotPlayer.coins) {
-        window.parent.postMessage({action:'openPaymentTab',url:"https://slotmachine.onehubplay.com/sorry"},'*') // add money link
+      if( window.hasFreeSpin ){
+        if (this.slotControls.auto) this.slotControls.resetAutoSpinsMode();
+        this.stateMachine.changeState(this.stateObject.spinState);
+        return 
+      }else{
         this.stateMachine.changeState(this.stateObject.iddleState);
-        return;
+        window.parent.postMessage({action:'openPaymentTab',url:"https://slotmachine.onehubplay.com/sorry"},'*') // add money link
+        return
       }
 
       if (this.slotControls.auto) this.slotControls.resetAutoSpinsMode();
