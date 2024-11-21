@@ -1,6 +1,6 @@
 // 3x5 20 lines, line buttons modern
 var slotConfig_3x5 = {
-    symbolSizeY: 260,
+    symbolSizeY: 300,
     // symbolSizeX: 100,
     spinTime: 2000,                 // time, milliseconds
     winShowTime: 3000,              // time, milliseconds
@@ -561,16 +561,16 @@ var slotConfig_3x5 = {
     reels: [
         {//0
             symbolImages: ['Heart', 'Nine', 'Jsymb', 'Heart', 'Qsymb', 'Diamond', 'Ten', 'Ksymb', 'Heart', 'Asymb', 'Scatter', 'Diamond'],
-            offsetX: -650,
-            offsetY: -255,
+            offsetX: -730,
+            offsetY: -100,
             windowImage: 'reel',    // not used
             windowsCount: 3,
             addSpinTime: 0, // additional spin time for reel milliseconds   
         },
         {//1
             symbolImages: ['Heart', 'Diamond', 'Heart', 'Qsymb', 'Nine', 'Jsymb', 'Diamond', 'Ksymb', 'Asymb', 'Ten', 'Scatter', 'Diamond', 'Heart', 'Nine', 'Ten', 'Diamond', 'Wild'],
-            offsetX: -330,
-            offsetY: -255,
+            offsetX: -350,
+            offsetY: -100,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 100, // additional spin time for reel milliseconds   
@@ -578,23 +578,23 @@ var slotConfig_3x5 = {
         { // 2
             symbolImages: ['Scatter', 'Heart', 'Ksymb', 'Wild', 'Diamond', 'Bonus', 'Qsymb', 'Bonus', 'Diamond', 'Nine', 'Jsymb', 'Asymb', 'Heart', 'Ten', 'Wild'],
             offsetX: 0,
-            offsetY: -255,
+            offsetY: -100,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 200, // additional spin time for reel milliseconds   
         },
         { // 3
             symbolImages: ['Diamond', 'Bonus', 'Nine', 'Bonus', 'Jsymb', 'Qsymb', 'Heart', 'Wild', 'Diamond', 'Ksymb', 'Asymb', 'Heart', 'Scatter', 'Diamond', 'Heart', 'Ten', 'Wild'],
-            offsetX: 310,
-            offsetY: -255,
+            offsetX: 360,
+            offsetY: -100,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 300, // additional spin time for reel milliseconds     
         },
         { // 4
             symbolImages: ['Diamond', 'Bonus', 'Heart', 'Diamond', 'Wild', 'Nine', 'Jsymb', 'Diamond', 'Qsymb', 'Asymb', 'Wild', 'Scatter', 'Heart', 'Ksymb', 'Ten', 'Wild', 'Bonus'],
-            offsetX: 660,
-            offsetY: -255,
+            offsetX: 730,
+            offsetY: -100,
             windowImage: 'reel',        // not used
             windowsCount: 3,
             addSpinTime: 400, // additional spin time for reel milliseconds     
@@ -801,9 +801,9 @@ var slotConfig_3x5 = {
         //scene.debugreference.depth = 2000;
         //scene.debugreference.setAlpha(0.0);
 
-        scene.slot = scene.addSpriteLocPos('slot', 0, -260);
+        scene.slot = scene.addSpriteLocPos('slot', 0, -100);
         scene.slot.depth = -1;
-        scene.slot.setScale(1.05);
+        scene.slot.setScale(1.2);
 
         // scene.bottomPanel = scene.addSpriteLocPos('bottom_panel', 0, 383);
         // scene.bottomPanel_1 = scene.addSpriteLocPos('bottom_panel', 1920, 383).setScale(-1, 1);
@@ -861,16 +861,16 @@ var slotConfig_3x5 = {
         // slotControls.totalbetPanel = scene.addSpriteLocPos('panel_totalbet', 682, 410);
         // slotControls.totalbetPanel.setDepth(depth);
         // slotControls.totalbetPanel.setVisible(false);
-        slotControls.balancePanel = scene.addSpriteLocPos('panel_balance', + 700, 390);
+        slotControls.balancePanel = scene.addSpriteLocPos('panel_balance', + 700, 590);
         slotControls.balancePanel.setDepth(depth);
         slotControls.balancePanel.setScale(1.8);
-        slotControls.winPanel = scene.addSpriteLocPos('panel_win',-700, 390);
+        slotControls.winPanel = scene.addSpriteLocPos('panel_win',-700, 590);
         slotControls.winPanel.setScale(1.8);
         slotControls.winPanel.setDepth(depth);
 
-        slotControls.money = scene.addSpriteLocPos('10k', 490, -1300).setScale(0.5);
-        slotControls.money = scene.addSpriteLocPos('12k', 40 , -1300).setScale(0.5);
-        slotControls.money = scene.addSpriteLocPos('11k', -490, -1300).setScale(0.5);
+        slotControls.money = scene.addSpriteLocPos('10k', 490, -1330).setScale(0.6);
+        slotControls.money = scene.addSpriteLocPos('12k', 0 , -1330).setScale(0.6);
+        slotControls.money = scene.addSpriteLocPos('11k', -490, -1330).setScale(0.6);
 
 
         // slotControls.addmoneyPanel.addClickEvent(() => {
@@ -906,10 +906,10 @@ var slotConfig_3x5 = {
         slotControls.slotSpinButton = new SpinButton(scene, 'button_spin', 'button_spin_hover', false);
         slotControls.buttons.push(slotControls.slotSpinButton);
         
-        slotControls.slotSpinButton.create(-0,700, 0.5, 0.5);
+        slotControls.slotSpinButton.create(-0,900, 0.5, 0.5);
         slotControls.slotSpinButton.button.setVisible(true);
         slotControls.slotSpinButton.clickEvent.add(scene.handleAnimation, scene);
-        slotControls.slotSpinButton.setScale(2);
+        slotControls.slotSpinButton.setScale(2.5);
         slotControls.slotSpinButton.setDepth(depth);
 
         // slotControls.slotSpinButtons = scene.addSpriteLocPos('button_spin', -0, 600 , 0.5 ,0.5);
@@ -932,7 +932,7 @@ var slotConfig_3x5 = {
             scene.soundController.playClip('button_click');
         }, this);
         slotControls.menuButton.button.setVisible(true);
-        slotControls.menuButton.setScale(1.8)
+        slotControls.menuButton.setScale(2)
         slotControls.menuButton.setDepth(depth);
 
         // settings button
@@ -945,7 +945,7 @@ var slotConfig_3x5 = {
             scene.soundController.playClip('button_click');
         }, this);
         slotControls.settingsButton.button.setVisible(false);
-        slotControls.settingsButton.setScale(1.8)
+        slotControls.settingsButton.setScale(2)
         slotControls.settingsButton.setDepth(depth);
 
 
@@ -974,20 +974,20 @@ var slotConfig_3x5 = {
             scene.soundController.playClip('button_click');
         }, this);
         slotControls.rulesButton.button.setVisible(false);
-        slotControls.rulesButton.setScale(1.8)
+        slotControls.rulesButton.setScale(2)
         slotControls.rulesButton.setDepth(10000);
 
         // info button
         slotControls.slotInfoButton = new SceneButton(scene, 'button_info', 'button_info_hover', false);
         slotControls.buttons.push(slotControls.slotInfoButton);
-        slotControls.slotInfoButton.create(+390 + 3 * 115, +1400, 0.5, 0.5);
+        slotControls.slotInfoButton.create(+ 440 + 3 * 115, +1400, 0.5, 0.5);
         slotControls.slotInfoButton.addClickEvent(() => {
             console.log('info click');
             var pu = scene.guiController.showPopUp(this.createAboutPUHandler);
             scene.soundController.playClip('button_click');
         }, this);
         slotControls.slotInfoButton.button.setVisible(true);
-        slotControls.slotInfoButton.setScale(1.8);  
+        slotControls.slotInfoButton.setScale(2);  
         slotControls.slotInfoButton.setDepth(depth);
 
         // totalbet minus button - not used
@@ -1051,7 +1051,7 @@ var slotConfig_3x5 = {
 
         slotControls.linesPlusButton = new SceneButton(scene, 'money-button_plus', 'money-button_plus_hover', false);
         slotControls.buttons.push(slotControls.linesPlusButton);
-        slotControls.linesPlusButton.create(0 + 860, 390, 0.5, 0.5);
+        slotControls.linesPlusButton.create(0 + 860, 590, 0.5, 0.5);
         slotControls.linesPlusButton.addClickEvent(slotControls.add_money_clicked, slotControls);
         slotControls.linesPlusButton.setScale(1.8);
         slotControls.linesPlusButton.setDepth(depth);
@@ -1077,11 +1077,11 @@ var slotConfig_3x5 = {
         slotControls.totalBetSumText.depth = depth;
         slotControls.totalBetSumText.setVisible(false);
 
-        slotControls.creditText = scene.add.bitmapText(scene.centerX + 700, scene.centerY + 240, 'gameFont_0', 'Balance', 47, 1).setOrigin(0.5);
+        slotControls.creditText = scene.add.bitmapText(scene.centerX + 700, scene.centerY + 440, 'gameFont_0', 'Balance', 47, 1).setOrigin(0.5);
         slotControls.creditText.depth = depth;
         slotControls.creditText.tint = 0xfcf465;
         slotControls.creditText.setScale(1.4)
-        slotControls.creditSumText = scene.add.bitmapText(scene.centerX +700, scene.centerY + 390, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
+        slotControls.creditSumText = scene.add.bitmapText(scene.centerX +700, scene.centerY + 590, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
         slotControls.creditSumText.setScale(1.6)
 
         slotControls.creditSumText.depth = depth;
@@ -1092,11 +1092,11 @@ var slotConfig_3x5 = {
         // slotControls.creditSumText = scene.add.bitmapText(scene.centerX + 558, scene.centerY + 406, 'gameFont_1', '' + scene.slotPlayer.coins, 63, 1).setOrigin(0.5);
         // slotControls.creditSumText.depth = depth;
 
-        slotControls.winText = scene.add.bitmapText(scene.centerX - 700, scene.centerY + 240, 'gameFont_0', 'Your Win', 46, 1).setOrigin(0.5);
+        slotControls.winText = scene.add.bitmapText(scene.centerX - 700, scene.centerY + 440, 'gameFont_0', 'Your Win', 46, 1).setOrigin(0.5);
         slotControls.winText.depth = depth;
         slotControls.winText.setScale(1.4)
         slotControls.winText.tint = 0xfcf465;
-        slotControls.winAmountText = scene.add.bitmapText(scene.centerX - 700, scene.centerY + 390, 'gameFont_1', '0', 63, 1).setOrigin(0.5);
+        slotControls.winAmountText = scene.add.bitmapText(scene.centerX - 700, scene.centerY + 590, 'gameFont_1', '0', 63, 1).setOrigin(0.5);
         slotControls.winAmountText.setScale(1.6)
         slotControls.winAmountText.depth = depth;
 
@@ -1128,9 +1128,9 @@ var slotConfig_3x5 = {
         slotControls.maxBetText1.depth = depth;
         slotControls.maxBetText1.setVisible(false);
 
-        slotControls.spinText = scene.add.bitmapText(scene.centerX - 1, scene.centerY + 720, 'gameFont_3', slotControls.spinTextString, 87, 1).setOrigin(0.5);
+        slotControls.spinText = scene.add.bitmapText(scene.centerX - 1, scene.centerY + 940, 'gameFont_3', slotControls.spinTextString, 87, 1).setOrigin(0.5);
         // slotControls.spinText.setLetterSpacing(0.5);
-        slotControls.spinText.setScale(1.6)
+        slotControls.spinText.setScale(2.4)
         slotControls.spinText.depth = depth;
 
         slotControls.infoText = scene.add.bitmapText(scene.centerX, scene.centerY + 400 + 200, 'gameFont_2', 'info', 30, 1).setOrigin(0.5);

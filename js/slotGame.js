@@ -238,15 +238,15 @@ class SlotGame extends Phaser.Scene {
 
     slotConfig.createSlotGraphic(this); // Call your graphic creation function
 
-    const centerX = 220; // Center of the camera
-    const centerY = -760; // Center of the camera
+    const centerX = 100; // Center of the camera
+    const centerY = -800; // Center of the camera
 
     // Now, after callig createSlotGraphic, instantiate and play the video
     const video = this.add.video(0, 0, "jackpotvid"); // Use the same name as in the config
     video.setOrigin(0);
     video.setMute(true); // Set the origin if needed
     video.play(true); // Play the video
-    video.setDisplaySize(1500, 650);
+    video.setDisplaySize(1700, 720);
     video.setPosition(centerX, centerY);
 
     this.add
@@ -255,8 +255,8 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.75)
-      .setPosition(700, -820); // Use the same name as in the config
+      .setScale(0.82)
+      .setPosition(650 , -830); // Use the same name as in the config
 
     this.add
       .video(0, 0, "mini")
@@ -264,7 +264,7 @@ class SlotGame extends Phaser.Scene {
       .setOrigin(0)
       .setMute(true)
       .play(true)
-      .setScale(0.66)
+      .setScale(0.7)
       .setPosition(1200, -750);
 
     this.add
