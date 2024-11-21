@@ -372,6 +372,11 @@ class SceneButton
         this.pressed = false;
         this.pDown = false;
     }
+      setScale(scale) {
+        if (this.button) {
+          this.button.setScale(scale); // This will scale the button proportionally
+        }
+      }
 
     pointerUp() 
     {

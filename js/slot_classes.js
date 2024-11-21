@@ -311,7 +311,7 @@ class Reel{
          /*       */
 
           // Define the scale factor for the symbols
-        var scaleFactor = .6; // Adjust this value to your needs
+        var scaleFactor = 1.05; // Adjust this value to your needs
         for(var si = 0; si < this.symbOrder.length; si++)
         {
             var symbName = this.symbOrder[si]; 
@@ -1689,7 +1689,7 @@ class SlotControls
     {
         if (this.slotPlayer.hasMoneyForBet(this.getTotalBet()))
         {
-            this.slotPlayer.addCoins(-this.getTotalBet());
+            this.slotPlayer.addCoins(- 30);
             // console.log("game deducted" + this.getTotalBet());
             return true;
         }

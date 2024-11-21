@@ -966,6 +966,11 @@ class SpinButton {
     this.longPress = false;
     this.timeoutID = -1;
   }
+  setScale(scale) {
+    if (this.button) {
+      this.button.setScale(scale); // This will scale the button proportionally
+    }
+  }
 
   pointerUp() {
     if (this.timeoutID !== -1) clearTimeout(this.timeoutID); // remove timer if exist
