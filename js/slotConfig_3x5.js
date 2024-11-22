@@ -640,12 +640,12 @@ var slotConfig_3x5 = {
       
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'Diamond', 'any'],
-            pay: 50,
+            pay: 30,
             freeSpins: 0
         },
         {
             line: ['Diamond', 'Diamond', 'Diamond', 'any', 'any'],
-            pay: 40,
+            pay: 20,
             freeSpins: 0
         },
         {
@@ -660,7 +660,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Heart', 'Heart', 'Heart', 'any', 'any'],
-            pay: 50,
+            pay: 10,
             freeSpins: 0
         },
         {
@@ -670,7 +670,7 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Nine', 'Nine', 'Nine', 'Nine', 'any'],
-            pay: 60,
+            pay: 10,
             freeSpins: 0
         },
         {
@@ -685,22 +685,22 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'Ten', 'any'],
-            pay: 50,
+            pay: 10,
             freeSpins: 0
         },
         {
             line: ['Ten', 'Ten', 'Ten', 'any', 'any'],
-            pay: 26,
+            pay: 10,
             freeSpins: 0
         },
         {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'Jsymb', 'Jsymb'],
-            pay: 100,
+            pay: 10,
             freeSpins: 0
         },
         {
             line: ['Jsymb', 'Jsymb', 'Jsymb', 'Jsymb', 'any'],
-            pay: 100,
+            pay: 10,
             freeSpins: 0
         },
         {
@@ -710,22 +710,22 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'Qsymb', 'Qsymb'],
-            pay: 100,
+            pay: 10,
             freeSpins: 0
         },
         {
             line: ['Qsymb', 'Qsymb', 'Qsymb', 'Qsymb', 'any'],
-            pay: 75,
+            pay: 10,
             freeSpins: 0
         },
-        // {
-        //     line: ['Qsymb', 'ksymb', 'jsymb', 'Ten', 'any'],
-        //     pay: 30,
-        //     freeSpins: 1
-        // },
+        {
+            line: ['Qsymb', 'Qsymb', 'Qsymb', 'any', 'any'],
+            pay: 20,
+            freeSpins: 0
+        },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'Ksymb', 'Ksymb'],
-            pay: 70,
+            pay: 20,
             freeSpins: 0
         },
         {
@@ -740,12 +740,12 @@ var slotConfig_3x5 = {
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'Asymb', 'Asymb'],
-            pay: 70,
+            pay: 10,
             freeSpins: 0
         },
         {
             line: ['Asymb', 'Asymb', 'Asymb', 'Asymb', 'any'],
-            pay: 60,
+            pay: 10,
             freeSpins: 0
         },
         {

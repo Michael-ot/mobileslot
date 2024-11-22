@@ -1,5 +1,5 @@
 
-window.balance = 945;
+window.balance= 100;
 window.hasFreeSpins = false;
 
 window.getWallet = async () =>{
