@@ -718,11 +718,11 @@ var slotConfig_3x5 = {
             pay: 75,
             freeSpins: 0
         },
-        {
-            line: ['Qsymb', 'Qsymb', 'Qsymb', 'any', 'any'],
-            pay: 30,
-            freeSpins: 0
-        },
+        // {
+        //     line: ['Qsymb', 'ksymb', 'jsymb', 'Ten', 'any'],
+        //     pay: 30,
+        //     freeSpins: 1
+        // },
         {
             line: ['Ksymb', 'Ksymb', 'Ksymb', 'Ksymb', 'Ksymb'],
             pay: 70,
@@ -760,19 +760,19 @@ var slotConfig_3x5 = {
         {
             scattersCount: 3,
             pay: 0,
-            freeSpins: 3,
+            freeSpins: 0,
             winEventString: null // this method will be called when winnings are shown (slotGame-> *winShowC)
         },
         {
             scattersCount: 4,
             pay: 0,
-            freeSpins: 4,
+            freeSpins: 0,
             winEventString: null // this method will be called when winnings are shown (slotGame-> *winShowC)
         },
         {
             scattersCount: 5,
             pay: 0,
-            freeSpins: 0,
+            freeSpins: 1,
             winEventString: 'slotConfig.showChestsPU_6' // this method will be called when winnings are shown (slotGame-> *winShowC) - chest mini-game
         }
     ],
