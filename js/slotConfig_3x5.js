@@ -868,9 +868,9 @@ var slotConfig_3x5 = {
         slotControls.winPanel.setScale(1.8);
         slotControls.winPanel.setDepth(depth);
 
-        slotControls.money = scene.addSpriteLocPos('10k', 490, -1330).setScale(0.6);
+        slotControls.money = scene.addSpriteLocPos('11k', 490, -1330).setScale(0.6);
         slotControls.money = scene.addSpriteLocPos('12k', 0 , -1330).setScale(0.6);
-        slotControls.money = scene.addSpriteLocPos('11k', -490, -1330).setScale(0.6);
+        slotControls.money = scene.addSpriteLocPos('10k', -490, -1330).setScale(0.6);
 
 
         // slotControls.addmoneyPanel.addClickEvent(() => {
