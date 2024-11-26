@@ -56,7 +56,7 @@ class PreSpinState {
         return 
       }else{
         this.stateMachine.changeState(this.stateObject.iddleState);
-        window.parent.postMessage({action:'openPaymentTab',url:"https://slotmachine.onehubplay.com/sorry"},'*') // add money link
+        window.parent.postMessage({action:'openPaymentTab',url:"https://slotmachine.onehubplay.com/buy-coins"},'*') // add money link
         return
       }
 
