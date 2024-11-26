@@ -1558,7 +1558,7 @@ class SlotControls
     add_money_clicked()
     {
         // window.open("https://slotmachine.onehubplay.com/sorry","_self");
-        window.parent.postMessage({action:'openPaymentTab',url:"https://slotmachine.onehubplay.com/sorry"},'*')
+        window.parent.postMessage({action:'openPaymentTab',url:"https://slotmachine.onehubplay.com/buy-coins"},'*')
     }
 
     linesMinus_Click()
