@@ -916,7 +916,7 @@ function getUserId(){
   return params.get("uid");
 }
 
-function saveSpin ()
+function saveSpin()
 {
   console.log("Save spin")
       let token = getToken();
